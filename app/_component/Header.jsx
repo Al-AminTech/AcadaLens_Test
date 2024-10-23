@@ -1,0 +1,101 @@
+"use client";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import React, { useState } from "react";
+import { logo } from "../img";
+import { Button } from "@/components/ui/button";
+import { FaBars } from "react-icons/fa";
+import Link from "next/link";
+
+function Header() {
+  const pathname = usePathname();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const MenuList = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Contact", path: "/contact" },
+    { name: "Blog", path: "/blog" },
+  ];
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div>
+      <div className="flex justify-between m-2 mx-0 md:mx-20  items-center bg-white shadow-md p-4 rounded-md">
+        <div>
+          <Image src={logo} className="w-[180.08px] h-[36px]" alt="Logo" />
+        </div>
+        <div className="md:hidden">
+          <FaBars onClick={toggleMenu} className="cursor-pointer text-2xl text-[#005C73]" />
+        </div>
+        <nav
+          className={`md:flex justify-around ${
+            menuOpen ? "block" : "hidden"
+          } transition-all duration-500 ease-in-out absolute md:static top-full left-0 w-full bg-white md:bg-transparent md:space-x-8`}
+        >
+          <ul className="md:flex md:space-x-8 space-y-4 md:space-y-0 p-4 md:p-0">
+            {MenuList.map((item, i) => (
+              <li key={i}>
+                <Link
+                  href={item.path}
+                  className={`${
+                    pathname === item.path ? "text-[#0090B2]" : "text-black"
+                  } hover:text-blue-500`}
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          {menuOpen && (
+            <Button onClick={toggleMenu} className="md:hidden">
+              Cancel
+            </Button>
+          )}
+        </nav>
+        <div className="hidden md:flex space-x-4">
+          <Button
+            variant="outline"
+            className="border w-28 border-[#0090B2] text-[#0090B2]"
+          >
+            Login
+          </Button>
+
+          <Button className="bg-[#0090B2] w-28 text-white">Sign Up</Button>
+        </div>
+      </div>
+
+      <div
+        className={`md:hidden ${
+          menuOpen ? "block" : "hidden"
+        } bg-white w-full shadow-md transition-all duration-500 ease-in-out`}
+      >
+        <ul className="space-y-4 p-4">
+          {MenuList.map((item, i) => (
+            <li key={i}>
+              <Link
+                href={item.path}
+                className={`${
+                  pathname === item.path ? "text-blue-500" : "text-black"
+                } hover:text-blue-500`}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="p-4">
+          <Button className="w-full border border-[#0090B2] text-[#0090B2]">
+            Login
+          </Button>
+          <Button className="w-full bg-[#0090B2] mt-3 text-white">Sign Up</Button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Header;
