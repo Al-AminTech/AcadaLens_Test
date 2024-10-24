@@ -112,3 +112,6 @@ body {
   display: flex;
   justify-content: space-between !important;
 }
+.name{
+  text-align: center !important;
+}

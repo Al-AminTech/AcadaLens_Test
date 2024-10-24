@@ -6,6 +6,7 @@ import Student from "./_component/Student";
 import Teacher from "./_component/Teacher";
 import Learn from "./_component/Learn";
 import Academic from "./_component/Acedemic";
+import Footer from "./_component/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Student/>
       <Teacher/>
     <Academic/>
+    <Footer/>
     </div>
   );
 }

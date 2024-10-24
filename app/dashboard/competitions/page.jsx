@@ -1,10 +1,10 @@
 import React from 'react'
-import Start from './_component/Start'
+import ExamPreference from './ExamPreference'
 
 function page() {
   return (
     <div>
-        <Start/>
+        <ExamPreference/>
     </div>
   )
 }
