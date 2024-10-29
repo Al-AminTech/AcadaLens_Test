@@ -46,7 +46,7 @@ export default function UserProfiles() {
 
   return (
     <div className="p-6 space-y-8">
-      <div className="flex justify-between items-center">
+      <div className="flex items-center">
         <h2 className="text-3xl font-bold">User Profiles</h2>
         <Link href={""} onClick={toggleView} size="lg">
           {showAll ? 'Hide Details' : 'View All'}

@@ -22,7 +22,7 @@ const Sidebar = () => {
 
   const isActive = (path) => pathname === path ? 'bg-[#E5FAFF]' : '';
 
-  return (
+  return (  
     <div className={`flex flex-col h-screen bg-white shadow-sm text-gray-500 transition-all duration-300 ${isCollapsed ? 'w-20' : 'w-64'}`}>
       {/* Logo */}
       <div className={`flex items-center p-4 text-xl font-bold ${isCollapsed ? 'justify-center' : 'justify-start'}`}>
@@ -71,8 +71,8 @@ const Sidebar = () => {
             )}
           </li>
 
-          <li className={`flex items-center gap-4 p-2 m-2 rounded-md  ${isActive('/subscription')}`}>
-            <Link href="/subscription" className="flex items-center gap-4">
+          <li className={`flex items-center gap-4 p-2 m-2 rounded-md  ${isActive('/dashboard/subscription')}`}>
+            <Link href="/dashboard/subscription" className="flex items-center gap-4">
               <MdSubscriptions size={24} />
               {!isCollapsed && <span className='font-semibold'>Subscription</span>}
             </Link>

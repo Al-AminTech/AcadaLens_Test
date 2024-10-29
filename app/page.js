@@ -7,6 +7,7 @@ import Teacher from "./_component/Teacher";
 import Learn from "./_component/Learn";
 import Academic from "./_component/Acedemic";
 import Footer from "./_component/Footer";
+import TestimonialCarousel from "./_component/Testimonial";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Student/>
       <Teacher/>
     <Academic/>
+    <TestimonialCarousel/>
     <Footer/>
     </div>
   );
