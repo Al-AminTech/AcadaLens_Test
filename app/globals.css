@@ -115,3 +115,29 @@ body {
 .name{
   text-align: center !important;
 }
+.aboutus {
+  background-image: url(./img/image\ 9.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 40rem;
+  color: white;
+}
+.learn {
+  background-image: url(./img/image\ 11.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25rem;
+  color: white;
+}
+@media (max-width: 768px) {
+  .aboutus {
+    background-image: url(./img/image\ 9.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 40rem;
+    color: white;
+  }
+}
