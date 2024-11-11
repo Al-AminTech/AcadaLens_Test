@@ -21,15 +21,15 @@ export default function Component() {
             <div className="flex justify-between items-start mb-2">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 mb-1">
-                  Login To Your Account
+                Create a new account
                 </h1>
                 <p className="text-sm text-gray-600">
-                  Don't have an account?{" "}
+                  Already have an account?{" "}
                   <Link
-                    href="/signup"
+                    href="/login"
                     className="text-blue-600 hover:underline font-semibold"
                   >
-                    Sign Up
+                   Login
                   </Link>
                 </p>
               </div>
@@ -62,30 +62,46 @@ export default function Component() {
                   required
                 />
               </div>
+              <div className="space-y-2">
+                <Label htmlFor="password" className="text-black">
+                 Confirm  Password
+                </Label>
+                <Input
+                  id="password"
+                  type="password"
+                  placeholder="Enter Password again"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="password" className="text-black">
+                  Phone number
+                </Label>
+                <Input
+                  id="password"
+                  type="password"
+                  placeholder="Enter phone number"
+                  required
+                />
+              </div>
 
-              <div className="flex items-center justify-between">
+              <div className="">
                 <div className="flex items-center space-x-2">
                   <Checkbox id="remember" />
                   <Label
                     htmlFor="remember"
                     className="text-sm text-black font-normal"
                   >
-                    Keep me sign in
+                  I agree to the Terms of Use and Privacy Policy
                   </Label>
                 </div>
-                <Link
-                  href="/login/forgotpass"
-                  className="text-sm text-blue-600 hover:underline"
-                >
-                  Forgot password?
-                </Link>
               </div>
 
               <Button
                 className="w-full bg-teal-600 hover:bg-teal-700"
                 size="lg"
               >
-                Login
+                Sign Up
               </Button>
 
               <div className="relative my-4">
@@ -107,7 +123,7 @@ export default function Component() {
                   <p>
                     <FaFacebook />
                   </p>
-                  <p> Login with Facebook</p>
+                  <p> Sign Up with Facebook</p>
                 </Button>
               </Link>
                 <Button
@@ -118,7 +134,7 @@ export default function Component() {
                   <p>
                     <FaGoogle />
                   </p>
-                  <p> Login with Google</p>
+                  <p> Sign Up with Google</p>
                 </Button>
                 <Button
                   variant="outline"
@@ -128,7 +144,7 @@ export default function Component() {
                   <p>
                     <FaApple />
                   </p>
-                  <p> Login with Apple</p>
+                  <p> Sign Up with Apple</p>
                 </Button>
               </div>
             </form>

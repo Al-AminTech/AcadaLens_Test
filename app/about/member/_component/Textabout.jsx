@@ -48,7 +48,7 @@ export default function Component() {
               </div>
             </div>
             <div className="space-y-4 text-sm">
-              <p>
+              <p> 
                 But the innovative team is not stopping at exam preparation. They had another bold aspiration: to address Africa's linguistic diversity through developing an
                 African Indigenous Language Learning Model. In a continent with thousands of languages, Acada Lens aspired to preserve and celebrate cultural heritage by
                 integrating native languages into academic learning. With this, they hoped to not only support multilingual students but also to create a model that allowed

@@ -131,6 +131,13 @@ body {
   height: 25rem;
   color: white;
 }
+.loginbg{
+  background-image: url(./img/login.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
 @media (max-width: 768px) {
   .aboutus {
     background-image: url(./img/image\ 9.png);

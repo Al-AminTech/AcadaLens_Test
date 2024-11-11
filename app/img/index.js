@@ -13,6 +13,7 @@ import vision from "./vision.png";
 import pic from "./pic.png";
 import faq from "./faq.png";
 import what from "./what.png";
+import login from "./login.png"
 export {
   logo,
   hero,
@@ -29,4 +30,5 @@ export {
   pic,
   faq,
   what,
+  login
 };
