@@ -14,6 +14,7 @@ import pic from "./pic.png";
 import faq from "./faq.png";
 import what from "./what.png";
 import login from "./login.png"
+import house from "./house.png"
 export {
   logo,
   hero,
@@ -30,5 +31,6 @@ export {
   pic,
   faq,
   what,
-  login
+  login,
+  house
 };
