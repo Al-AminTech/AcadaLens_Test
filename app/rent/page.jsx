@@ -9,6 +9,7 @@ import Footer from '../_component/Footer'
 import Academic from '../_component/Acedemic'
 import Header from '../_component/Header'
 import Hero from './_omponents/Hero'
+import Experience from './_omponents/Experience'
 
 function page() {
   return (
@@ -21,6 +22,7 @@ function page() {
           <Hero />
         </div>
       </div>
+      <Experience/>
       <Component />
       <Offers/>
       <Steam/>

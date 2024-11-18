@@ -130,7 +130,7 @@ body {
   background-repeat: no-repeat;
   height: 40rem;
   color: white;
-  background-image: url(./img/house.png);
+  background-image: url(./img/Apart.jpeg);
 }
 
 .rent::before {
@@ -150,7 +150,7 @@ body {
 }
 
 .learn {
-  background-image: url(./img/image\ 11.png);
+  background-image: url(./img/learn.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

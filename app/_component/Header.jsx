@@ -98,14 +98,18 @@ function Header() {
           )}
         </nav>
         <div className="hidden md:flex space-x-4">
-          <Button
+       <Link href={"/login"}>
+       <Button
             variant="outline"
             className="border w-28 border-[#0090B2] text-[#0090B2]"
           >
             Login
           </Button>
+       </Link>
 
-          <Button className="bg-[#0090B2] w-28 text-white">Sign Up</Button>
+            <Link href={"/signup"}>
+            <Button className="bg-[#0090B2] w-28 text-white">Sign Up</Button>
+            </Link>
         </div>
       </div>
 
