@@ -16,6 +16,7 @@ import what from "./what.png";
 import login from "./login.png"
 import house from "./house.png"
 import bed from "./bed.png"
+import Profile from "./Avatar.png"
 export {
   logo,
   hero,
@@ -34,5 +35,6 @@ export {
   what,
   login,
   house,
-  bed
+  bed,
+  Profile
 };

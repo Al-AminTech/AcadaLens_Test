@@ -76,17 +76,44 @@ const Sidebar = () => {
               )}
             </Link>
           </li>
-          <li
-            className={`flex items-center gap-4 p-3 m-3 rounded-md ${isActive(
-              "/dashboard/community"
-            )}`}
-          >
-            <Link href="/dashboard/community" className="flex items-center gap-4">
-              <FiUsers size={24} />
+          <li>
+            <button
+              onClick={toggleAiLearningDropdown}
+              className={`flex items-center gap-2 p-3 m-3 rounded-md ${isActive(
+                "/dashboard/community"
+              )}`}
+            >
+              <FiPieChart size={24} />
               {!isCollapsed && (
-                <span className="font-semibold">Community</span>
+                <span className="font-semibold">Community </span>
               )}
-            </Link>
+              {!isCollapsed && (
+                <FiChevronDown
+                  className={`ml-auto text-lg font-bold transform ${
+                    isAiLearningDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
+              )}
+            </button>
+            {/* Dropdown items */}
+            {isAiLearningDropdownOpen && !isCollapsed && (
+              <ul className="pl-8 space-y-2">
+                <li
+                  className={`flex items-center gap-4 p-2 m-1 ${isActive(
+                    "/dashboard/community/profile"
+                  )}`}
+                >
+                  <Link href="/dashboard/community/profile">Profile</Link>
+                </li>
+                <li
+                  className={`flex items-center gap-4 p-2 ${isActive(
+                    "/ailearning/course2"
+                  )}`}
+                >
+                  <Link href="/ailearning/course2">Course 2</Link>
+                </li>
+              </ul>
+            )}
           </li>
 
           {/* AI Learning Dropdown */}

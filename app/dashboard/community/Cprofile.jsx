@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Institution from "./Institution";
+import { Profile } from "@/app/img";
 
 export default function Cprofile() {
   return (
@@ -28,12 +29,12 @@ export default function Cprofile() {
               type="search"
             />
           </div>
-          <Button size="icon" variant="ghost">
+          {/* <Button size="icon" variant="ghost">
             <Bell className="h-5 w-5" />
             <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-xs text-white">
               1
             </span>
-          </Button>
+          </Button> */}
         </div>
       </header>
 
@@ -61,7 +62,7 @@ export default function Cprofile() {
               alt="Profile picture"
               className="aspect-square object-cover"
               height={192}
-              src="/placeholder.svg"
+              src={Profile}
               width={192}
             />
           </div>
@@ -70,7 +71,7 @@ export default function Cprofile() {
 
       {/* Profile Content */}
       <main className="container relative">
-        <div className="pt-28">
+        <div className="pt-20">
           <div className="flex items-start justify-between">
             <div>
               <h1 className="text-2xl font-bold">
@@ -98,12 +99,12 @@ export default function Cprofile() {
                 </div>
               </div>
             </div>
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <Button size="icon" variant="ghost">
                 <MoreHorizontal className="h-5 w-5" />
               </Button>
               <Button>Edit Profile</Button>
-            </div>
+            </div> */}
           </div>
 
           {/* About Section */}

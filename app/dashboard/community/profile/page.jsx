@@ -1,5 +1,5 @@
 import React from 'react'
-import Cprofile from './Cprofile'
+import Cprofile from '../Cprofile'
 
 function page() {
   return (
