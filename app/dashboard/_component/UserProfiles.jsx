@@ -28,6 +28,7 @@ const users = [
   { id: 3, name: 'John Smith', username: '@johnsmith', avatar: '/placeholder.svg?height=40&width=40', averageScore: '80/100', rank: 'Novice', badge: 'Novice', email: 'john@example.com' },
   { id: 4, name: 'Alice Johnson', username: '@alicej', avatar: '/placeholder.svg?height=40&width=40', averageScore: '95/100', rank: 'Master', badge: 'Master', email: 'alice@example.com' },
   { id: 5, name: 'Bob Wilson', username: '@bobw', avatar: '/placeholder.svg?height=40&width=40', averageScore: '88/100', rank: 'Advanced', badge: 'Advanced', email: 'bob@example.com' },
+  { id: 5, name: 'Bob Wilson', username: '@bobw', avatar: '/placeholder.svg?height=40&width=40', averageScore: '88/100', rank: 'Advanced', badge: 'Advanced', email: 'bob@example.com' }, 
 ]
 
 const USERS_PER_PAGE = 5
@@ -46,7 +47,7 @@ export default function UserProfiles() {
 
   return (
     <div className="p-6 space-y-8">
-      <div className="flex items-center">
+      <div className="flex gap-2 items-center">
         <h2 className="text-3xl font-bold">User Profiles</h2>
         <Link href={""} onClick={toggleView} size="lg">
           {showAll ? 'Hide Details' : 'View All'}

@@ -22,9 +22,9 @@ function Center() {
       <div>
         <div className="">
           <div>
-            <h1 className="font-bold text-xl  ">Your Exam Summary</h1>
+            <h1 className="font-bold pl-4 text-2xl  ">Your Exam Summary</h1>
           </div>
-          <div className="num mt-10  flex">
+          <div className="num mt-10  flex gap-10">
             <div>
               {" "}
               <Exam
@@ -68,17 +68,19 @@ function Center() {
           </div>
         </div>
         <div>
-          <UserProfiles/>
+          <UserProfiles />
         </div>
         <div>
           <div>
-            <h1 className="font-bold text-2xl">Your AI Class Summary</h1>
+            <h1 className="font-bold pl-4 text-2xl">Your AI Class Summary</h1>
           </div>
-          <div className="flex  gap-3">
-            <Summary name="UoE" subject="Use of English" topic="Oral Sound" />
-            <Summary name="UE" subject={"Mathematics"} topic={"Accounting"}  />
-            <Summary name="UE" subject={"Mathematics"} topic={"Accounting"}  />
-            <Summary name="UE" subject={"Mathematics"} topic={"Accounting"}  />
+          <div className="p-3">
+            <div className="flex gap-6">
+              <Summary name="UoE" subject="Use of English" topic="Oral Sound" />
+              <Summary name="UE" subject={"Mathematics"} topic={"Accounting"} />
+              <Summary name="UE" subject={"Mathematics"} topic={"Accounting"} />
+              <Summary name="UE" subject={"Mathematics"} topic={"Accounting"} />
+            </div>
           </div>
         </div>
       </div>

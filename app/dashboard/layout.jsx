@@ -1,12 +1,11 @@
-import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar"
-import Sidebar, { AppSidebar } from "./_component/Sidebars"
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+import Sidebar, { AppSidebar } from "./_component/Sidebars";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex gap-4 bg-gray-50">
-     <Sidebar/>
-
-        {children}
+    <div className="flex  relative gap-2 bg-gray-50">
+      <Sidebar />
+      <div className="absolute left-72"> {children}</div>
     </div>
-  )
+  );
 }

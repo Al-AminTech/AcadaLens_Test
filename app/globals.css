@@ -164,6 +164,19 @@ body {
   background-repeat: no-repeat;
   color: white;
 }
+.scroll-container::-webkit-scrollbar {
+  height: 8px; /* Height for horizontal scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #005C73;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #E5FAFF;
+}
+
 @media (max-width: 768px) {
   .aboutus {
     background-image: url(./img/image\ 9.png);
@@ -174,3 +187,4 @@ body {
     color: white;
   }
 }
+
