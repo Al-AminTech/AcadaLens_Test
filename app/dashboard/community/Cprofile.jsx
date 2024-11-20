@@ -99,12 +99,12 @@ export default function Cprofile() {
                 </div>
               </div>
             </div>
-            {/* <div className="flex gap-2">
+            <div className="flex gap-2">
               <Button size="icon" variant="ghost">
                 <MoreHorizontal className="h-5 w-5" />
               </Button>
               <Button>Edit Profile</Button>
-            </div> */}
+            </div>
           </div>
 
           {/* About Section */}

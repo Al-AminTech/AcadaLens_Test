@@ -8,7 +8,7 @@ export default function Sinterface() {
       <div>
         <h1 className="font-extrabold text-3xl">Settings</h1>
       </div>
-      <div className="w-full pl-20 pt-10 max-w-3xl mx-auto p-4 space-y-4">
+      <div className="w-full flex flex-col gap-7 pl-20 pt-10 max-w-3xl mx-auto p-4 space-y-4">
         <Link href={"/dashboard/settings/profile"}>
           <Card className="p-6">
             <div className="flex gap-4">
@@ -24,19 +24,21 @@ export default function Sinterface() {
           </Card>
         </Link>
 
-        <Card className="p-6">
-          <div className="flex gap-4">
-            <Shield className="w-6 h-6 mt-1" />
-            <div>
-              <h2 className="text-xl font-bold mb-2">Security</h2>
-              <p className="text-muted-foreground">
-                Utilize your actions to the fullest, and the security mechanisms
-                will safeguard you from malware and potentially dangerous
-                websites.
-              </p>
+        <Link href={"/dashboard/settings/security"}>
+          <Card className="p-6">
+            <div className="flex gap-4">
+              <Shield className="w-6 h-6 mt-1" />
+              <div>
+                <h2 className="text-xl font-bold mb-2">Security</h2>
+                <p className="text-muted-foreground">
+                  Utilize your actions to the fullest, and the security
+                  mechanisms will safeguard you from malware and potentially
+                  dangerous websites.
+                </p>
+              </div>
             </div>
-          </div>
-        </Card>
+          </Card>
+        </Link>
 
         <Card className="p-6">
           <div className="flex gap-4">

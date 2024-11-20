@@ -20,7 +20,8 @@ import { logo } from "@/app/img";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isAiLearningDropdownOpen, setIsAiLearningDropdownOpen] = useState(false);
+  const [isAiLearningDropdownOpen, setIsAiLearningDropdownOpen] =
+    useState(false);
   const pathname = usePathname();
 
   const toggleSidebar = () => {
@@ -99,18 +100,18 @@ const Sidebar = () => {
             {isAiLearningDropdownOpen && !isCollapsed && (
               <ul className="pl-8 space-y-2">
                 <li
+                  className={`flex items-center gap-4 p-2 ${isActive(
+                    "/dashboard/community/home"
+                  )}`}
+                >
+                  <Link href="/dashboard/community/home">Home</Link>
+                </li>
+                <li
                   className={`flex items-center gap-4 p-2 m-1 ${isActive(
                     "/dashboard/community/profile"
                   )}`}
                 >
                   <Link href="/dashboard/community/profile">Profile</Link>
-                </li>
-                <li
-                  className={`flex items-center gap-4 p-2 ${isActive(
-                    "/ailearning/course2"
-                  )}`}
-                >
-                  <Link href="/ailearning/course2">Course 2</Link>
                 </li>
               </ul>
             )}
