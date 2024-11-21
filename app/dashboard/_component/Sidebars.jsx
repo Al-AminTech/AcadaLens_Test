@@ -17,6 +17,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { logo } from "@/app/img";
+import { FaPeopleGroup } from "react-icons/fa6";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -84,7 +85,7 @@ const Sidebar = () => {
                 "/dashboard/community"
               )}`}
             >
-              <FiPieChart size={24} />
+              <FaPeopleGroup size={24} />
               {!isCollapsed && (
                 <span className="font-semibold">Community </span>
               )}
@@ -100,7 +101,7 @@ const Sidebar = () => {
             {isAiLearningDropdownOpen && !isCollapsed && (
               <ul className="pl-8 space-y-2">
                 <li
-                  className={`flex items-center gap-4 p-2 ${isActive(
+                  className={`flex items-center gap-4 p-2 m-1  ${isActive(
                     "/dashboard/community/home"
                   )}`}
                 >

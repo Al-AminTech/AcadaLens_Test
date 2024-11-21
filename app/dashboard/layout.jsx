@@ -3,9 +3,9 @@ import Sidebar, { AppSidebar } from "./_component/Sidebars";
 
 export default function Layout({ children }) {
   return (
-    <div className="flex  relative gap-2 bg-gray-50">
+    <div className="flex  relative  bg-gray-50">
       <Sidebar />
-      <div className="absolute left-72"> {children}</div>
+      <div className="absolute left-64"> {children}</div>
     </div>
   );
 }

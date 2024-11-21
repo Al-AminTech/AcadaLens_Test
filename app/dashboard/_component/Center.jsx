@@ -10,7 +10,7 @@ import UserProfiles from "./UserProfiles";
 function Center() {
   return (
     <div className="flex flex-col gap-7">
-      <div className="flex gap-[45rem] shadow-sm m-2  p-2 items-center">
+      <div className="flex  justify-between shadow-sm m-2  p-2 items-center">
         <div>
           <h1 className="font-bold text-2xl">Overview Summary</h1>
         </div>
@@ -24,7 +24,7 @@ function Center() {
           <div>
             <h1 className="font-bold pl-4 text-2xl  ">Your Exam Summary</h1>
           </div>
-          <div className="num mt-10  flex gap-10">
+          <div className="num mt-10 ml-4  flex gap-10">
             <div>
               {" "}
               <Exam
