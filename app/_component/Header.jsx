@@ -31,7 +31,7 @@ function Header() {
 
   return (
     <div>
-      <div className="flex justify-between m-2 mx-0 md:mx-20 items-center bg-white shadow-md p-4 rounded-md">
+      <div className="flex justify-between m-4 mx-0 md:mx-20 items-center bg-white shadow-md p-4 rounded-md">
         <div>
           <Image src={logo} className="w-[180.08px] h-[36px]" alt="Logo" />
         </div>

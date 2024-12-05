@@ -15,7 +15,7 @@ function HeroSec() {
             </div>
         </div>
         <div>
-            <Image  src={hero} className='p-4 md:h-96 h-full w-full md:w-[27rem] rounded-xl'/>
+            <Image  src={hero} className='p-4 image md:h-[26rem] h-full w-full md:w-[27rem] ' />
         </div>
     </div>
   )

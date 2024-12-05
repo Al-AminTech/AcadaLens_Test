@@ -17,6 +17,8 @@ import login from "./login.png"
 import house from "./house.png"
 import bed from "./bed.png"
 import Profile from "./Avatar.png"
+import UnilroinLogo from "./Unilorinlogo.png"
+import Community from "./community.png"
 export {
   logo,
   hero,
@@ -36,5 +38,7 @@ export {
   login,
   house,
   bed,
-  Profile
+  Profile,
+  UnilroinLogo,
+  Community
 };

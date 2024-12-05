@@ -1,5 +1,6 @@
 "use client";
 
+import { Community, Profile, UnilroinLogo } from '@/app/img';
 import { MessageSquare, Heart, Share2 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -11,7 +12,7 @@ export default function PostList() {
           <div className="flex items-center space-x-3 mb-4">
             <div className="h-10 w-10 rounded-full bg-gray-200 overflow-hidden">
               <Image
-                src=""
+                src={UnilroinLogo}
                 alt="University Profile"
                 width={40}
                 height={40}
@@ -34,7 +35,7 @@ export default function PostList() {
           {post === 2 && (
             <div className="mb-4 rounded-lg overflow-hidden">
               <Image
-                src=""
+                src={Community}
                 alt="Graduation ceremony"
                 width={800}
                 height={400}
@@ -42,6 +43,7 @@ export default function PostList() {
               />
             </div>
           )}
+        
 
           <div className="flex items-center space-x-6">
             <button className="flex items-center space-x-2 text-gray-600">
@@ -57,6 +59,28 @@ export default function PostList() {
               <span>298</span>
             </button>
           </div>
+          <div className='flex gap-3 items-center mt-5'>
+            <Image src={Profile} className='w-10 '/>
+            <input type="text" placeholder='Write a comment..' className='border-none outline-none text-sm h-10 pl-4 w-full bg-[#F2FDFF] rounded-lg  '/>
+          </div>
+        <div>
+        {post == 2 && (
+            <div>
+              <div>
+                <Image src={Profile} className='w-10'/>
+                <div>
+              <div>
+              <h5>Sanni Ahmed Agboola </h5>
+              <p>44min</p>
+              </div>
+              <div>
+                
+              </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
         </div>
       ))}
     </div>

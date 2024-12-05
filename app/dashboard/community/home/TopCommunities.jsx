@@ -7,8 +7,8 @@ export default function TopCommunities() {
     ];
   
     return (
-      <div className="bg-white rounded-lg shadow-sm p-6">
-        <h2 className="text-lg font-semibold mb-4">TOP COMMUNITIES</h2>
+      <div className="bg-[#F2FDFF] rounded-lg shadow-sm p-6">
+        <h2 className="text-lg font-bold mb-4 text-[#005C73]">TOP COMMUNITIES</h2>
         <div className="space-y-4">
           {communities.map((community, index) => (
             <div key={index} className="flex items-center justify-between">
@@ -27,7 +27,7 @@ export default function TopCommunities() {
             </div>
           ))}
         </div>
-        <button className="w-full mt-4 text-blue-600 font-medium">
+        <button className="w-full mt-4 border bg-white rounded-md border-blue-500 text-blue-600 font-medium">
           View All
         </button>
       </div>

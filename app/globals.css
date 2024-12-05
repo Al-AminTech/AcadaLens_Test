@@ -176,6 +176,9 @@ body {
 .scroll-container::-webkit-scrollbar-track {
   background-color: #E5FAFF;
 }
+.image{
+  border-radius:  30px !important;
+}
 
 @media (max-width: 768px) {
   .aboutus {

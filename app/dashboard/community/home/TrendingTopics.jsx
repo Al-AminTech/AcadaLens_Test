@@ -19,7 +19,7 @@ export default function TrendingTopics() {
     ];
   
     return (
-      <div className="bg-white rounded-lg shadow-sm p-6">
+      <div className="bg-[#F2FDFF] rounded-lg shadow-sm p-6">
         <h2 className="text-lg font-semibold mb-4">TRENDS FOR YOU</h2>
         <div className="space-y-4">
           {trends.map((trend, index) => (
@@ -31,7 +31,7 @@ export default function TrendingTopics() {
             </div>
           ))}
         </div>
-        <button className="w-full mt-4 text-blue-600 font-medium">
+        <button className="w-full rounded-md border border-blue-500 bg-white mt-4 text-blue-600 font-medium">
           View All
         </button>
       </div>
