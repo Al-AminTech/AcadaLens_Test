@@ -5,8 +5,7 @@ import Sidebar from "./_component/Sidebars";
 function page() {
   return (
     <div className="flex ">
-    
-        <Center />
+          <Center />
     </div>
   );
 }

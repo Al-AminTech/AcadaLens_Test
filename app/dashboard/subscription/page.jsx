@@ -1,12 +1,14 @@
 import React from 'react'
-import SubscriptionComponent from './_component/Subscribe'
+// import SubscriptionComponent from './_component/Subscribe'
+import PaymentForm from './_component/Subscribe'
+import ContactForm from './_component/ContactInformation'
 
 
 function page() {
   return (
     <div>
        
-       <SubscriptionComponent/>
+      <ContactForm/>
     </div>
   )
 }

@@ -19,7 +19,7 @@ function Summary({name,subject,topic}) {
               </div>
             </div>
             <div>
-            <BiRightArrowAlt className="text-4xl" />
+            <BiRightArrowAlt className="text-4xl cursor-pointer" />
             </div>
           </div>
         </div>

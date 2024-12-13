@@ -1,8 +1,8 @@
 "use client";
 
-import { Community, Profile, UnilroinLogo } from '@/app/img';
-import { MessageSquare, Heart, Share2 } from 'lucide-react';
-import Image from 'next/image';
+import { Community, Profile, UnilroinLogo } from "@/app/img";
+import { MessageSquare, Heart, Share2 } from "lucide-react";
+import Image from "next/image";
 
 export default function PostList() {
   return (
@@ -23,13 +23,11 @@ export default function PostList() {
               <p className="text-sm text-gray-500">Yesterday at 10:48 AM</p>
             </div>
           </div>
-          
+
           <p className="mb-4">
-            {post === 1 ? (
-              "It's more likely that people reading your blog will opt in with their email addresses if you give them something highly relevant in return. Ditch that too-general lead magnet and create \"content upgrades\" for your highest-traffic articles."
-            ) : (
-              "University of Ilorin concluded her convocation in style 🌿"
-            )}
+            {post === 1
+              ? 'It\'s more likely that people reading your blog will opt in with their email addresses if you give them something highly relevant in return. Ditch that too-general lead magnet and create "content upgrades" for your highest-traffic articles.'
+              : "University of Ilorin concluded her convocation in style 🌿"}
           </p>
 
           {post === 2 && (
@@ -43,7 +41,6 @@ export default function PostList() {
               />
             </div>
           )}
-        
 
           <div className="flex items-center space-x-6">
             <button className="flex items-center space-x-2 text-gray-600">
@@ -59,28 +56,33 @@ export default function PostList() {
               <span>298</span>
             </button>
           </div>
-          <div className='flex gap-3 items-center mt-5'>
-            <Image src={Profile} className='w-10 '/>
-            <input type="text" placeholder='Write a comment..' className='border-none outline-none text-sm h-10 pl-4 w-full bg-[#F2FDFF] rounded-lg  '/>
+          <div className="flex gap-3 items-center mt-5">
+            <Image src={Profile} className="w-10 " />
+            <input
+              type="text"
+              placeholder="Write a comment.."
+              className="border-none outline-none text-sm h-10 pl-4 w-full bg-[#F2FDFF] rounded-lg  "
+            />
           </div>
-        <div>
-        {post == 2 && (
-            <div>
-              <div>
-                <Image src={Profile} className='w-10'/>
-                <div>
-              <div>
-              <h5>Sanni Ahmed Agboola </h5>
-              <p>44min</p>
-              </div>
-              <div>
-                
-              </div>
+          <div>
+            {post == 2 && (
+              <div className="mt-3">
+                <div className="bg-[#F2FDFF]  rounded-xl  p-2 flex items-center gap-4">
+                  <Image src={Profile} className="w-10" />
+                  <div className=" flex flex-col pt-5">
+                    <div className="flex items-center gap-6 ">
+                      <h5 className="text-gray-400 font-bold">Sanni Ahmed Agboola </h5>
+                      <p className="text-gray-400 text-sm">44min</p>
+                    </div>
+                    <div className="flex gap-2 items-center" >
+                      <h5 className="font-bold text-[#004859]" >@Sanni Ahmed Agboola </h5>
+                      <p   className="text-sm">Reading through this information it should be helpful.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          )}
-        </div>
+            )}
+          </div>
         </div>
       ))}
     </div>

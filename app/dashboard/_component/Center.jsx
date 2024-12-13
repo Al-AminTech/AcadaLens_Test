@@ -10,7 +10,7 @@ import UserProfiles from "./UserProfiles";
 function Center() {
   return (
     <div className="flex flex-col gap-7">
-      <div className="flex  justify-between shadow-sm m-2  p-2 items-center">
+      <div className="flex  justify-between shadow  w-[100%]  p-4 items-center">
         <div>
           <h1 className="font-bold text-2xl">Overview Summary</h1>
         </div>
@@ -70,7 +70,7 @@ function Center() {
         <div>
           <UserProfiles />
         </div>
-        <div>
+        <div className="mt-52">
           <div>
             <h1 className="font-bold pl-4 text-2xl">Your AI Class Summary</h1>
           </div>

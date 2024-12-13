@@ -104,7 +104,7 @@ export default function UserProfiles() {
 
   return (
     <div className="p-6 space-y-8">
-      <div className="flex gap-2 items-center">
+      {/* <div className="flex gap-2 items-center">
         <h2 className="text-3xl font-bold">User Profiles</h2>
         <Link href={"/dashboard/allprofile"} onClick={toggleView} size="lg">
           {"View All"}
@@ -140,7 +140,7 @@ export default function UserProfiles() {
             </TableRow>
           ))}
         </TableBody>
-      </Table>
+      </Table> */}
     </div>
   );
 }

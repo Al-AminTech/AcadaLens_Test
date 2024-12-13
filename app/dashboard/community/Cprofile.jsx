@@ -17,7 +17,7 @@ import { Profile } from "@/app/img";
 
 export default function Cprofile() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background ml-3">
       {/* Header */}
       <header className="border-b">
         <div className="container flex items-center justify-between py-4">
@@ -70,20 +70,20 @@ export default function Cprofile() {
       </div>
 
       {/* Profile Content */}
-      <main className="container relative">
+      <main className="container mt-20 relative">
         <div className="pt-20">
           <div className="flex items-start justify-between">
             <div>
               <h1 className="text-2xl font-bold">
                 Sanni Ahmed Agboola
-                <span className="ml-2 inline-block">
+                {/* <span className="ml-2 inline-block">
                   <Image
                     alt="Star"
                     height={24}
                     src="/placeholder.svg"
                     width={24}
                   />
-                </span>
+                </span> */}
               </h1>
               <p className="text-muted-foreground">
                 Post-UTME, University of Ilorin

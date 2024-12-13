@@ -259,6 +259,7 @@ import {
   FiChevronDown,
 } from "react-icons/fi";
 import { MdSubscriptions } from "react-icons/md";
+import { VscRobot } from "react-icons/vsc";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
@@ -418,10 +419,11 @@ const Sidebar = () => {
               <ul className="pl-8 space-y-2">
                 <li
                   className={`flex items-center gap-4 p-2 ${isActive(
-                    "/ailearning/course1"
+                    "/dashboard/ai/aiclass"
                   )}`}
                 >
-                  <Link href="/dashboard/ai/aiclass">AI Classroom</Link>
+                  <b><VscRobot/></b>
+                  <Link href="/dashboard/ai/aiclass" className="font-bold">AI Classroom</Link>
                 </li>
                 <li
                   className={`flex items-center gap-4 p-2 ${isActive(
