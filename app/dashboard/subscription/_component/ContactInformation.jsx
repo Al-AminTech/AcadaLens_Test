@@ -21,7 +21,7 @@ export default function ContactForm() {
             <Input
               id="firstName"
               defaultValue="Ahmed"
-              className="w-full px-4 py-2 rounded-full border"
+              className="w-full px-4 py-2 rounded-md border"
             />
           </div>
           <div className="space-y-2">
@@ -31,7 +31,7 @@ export default function ContactForm() {
             <Input
               id="lastName"
               defaultValue="Sanni"
-              className="w-full px-4 py-2 rounded-full border"
+              className="w-full px-4 py-2 rounded-md   border"
             />
           </div>
         </div>
@@ -43,7 +43,7 @@ export default function ContactForm() {
           <Input
             id="address"
             defaultValue="5b Odeyemi Street, Off University of Ilorin Permanent site road, Tanke, Ilorin."
-            className="w-full px-4 py-2 rounded-full border"
+            className="w-full px-4 py-2 rounded-md border"
           />
         </div>
 
@@ -55,7 +55,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             defaultValue="sanniahmedagboola@gmail.com"
-            className="w-[30rem] px-4 h-20 rounded-full border"
+            className="w-[30rem] px-4 h-10 rounded-full border"
           />
         </div>
 

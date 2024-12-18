@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { logo } from "../img";
 import { Button } from "@/components/ui/button";
 import { FaBars } from "react-icons/fa";
@@ -12,6 +12,7 @@ function Header() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false); // To handle scroll event
 
   const MenuList = [
     { name: "Home", path: "/" },
@@ -20,6 +21,20 @@ function Header() {
     { name: "Product", path: "#" },
     { name: "Blog", path: "/blog" },
   ];
+
+  // Handle scroll event
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsFixed(true); // Navbar becomes fixed after 50px scroll
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -31,7 +46,11 @@ function Header() {
 
   return (
     <div>
-      <div className="flex justify-between m-4 mx-0 md:mx-20 items-center bg-white shadow-md p-4 rounded-md">
+      <div
+        className={`flex justify-between m-4 mx-0 md:mx-20 items-center bg-white shadow-md p-4 rounded-md transition-all duration-300 ease-in-out ${
+          isFixed ? "fixed top-0 left-0 right-0 z-50 w-full" : ""
+        }`}
+      >
         <div>
           <Image src={logo} className="w-[180.08px] h-[36px]" alt="Logo" />
         </div>
@@ -98,18 +117,18 @@ function Header() {
           )}
         </nav>
         <div className="hidden md:flex space-x-4">
-       <Link href={"/login"}>
-       <Button
-            variant="outline"
-            className="border w-28 border-[#0090B2] text-[#0090B2]"
-          >
-            Login
-          </Button>
-       </Link>
+          <Link href={"/login"}>
+            <Button
+              variant="outline"
+              className="border w-28 border-[#0090B2] text-[#0090B2]"
+            >
+              Login
+            </Button>
+          </Link>
 
-            <Link href={"/signup"}>
+          <Link href={"/signup"}>
             <Button className="bg-[#0090B2] w-28 text-white">Sign Up</Button>
-            </Link>
+          </Link>
         </div>
       </div>
 

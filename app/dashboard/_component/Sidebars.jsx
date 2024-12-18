@@ -319,7 +319,7 @@ const Sidebar = () => {
           isCollapsed ? "justify-center" : "justify-center"
         }`}
       >
-        {isCollapsed ? "D" : <Image src={logo} className="w-40 h-12" />}
+        {isCollapsed ? "D" : <Image src={logo} className="w-28 h-12" />}
       </div>
 
       {/* Menu Items */}

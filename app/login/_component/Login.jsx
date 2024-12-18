@@ -98,21 +98,21 @@ export default function Component() {
               </div>
 
               <div className="space-y-3">
-              <Link href={"/login/fblogin"}>
-              <Button
-                  variant="outline"
-                  className="w-full text-black"
-                  size="lg"
-                >
-                  <p>
-                    <FaFacebook />
-                  </p>
-                  <p> Login with Facebook</p>
-                </Button>
-              </Link>
+                <Link href={"/login/fblogin"}>
+                  <Button
+                    variant="outline"
+                    className="w-full flex gap-5 text-black"
+                    size="lg"
+                  >
+                    <p>
+                      <FaFacebook />
+                    </p>
+                    <p> Login with Facebook</p>
+                  </Button>
+                </Link>
                 <Button
                   variant="outline"
-                  className="w-full text-black"
+                  className="w-full flex gap-4 text-black"
                   size="lg"
                 >
                   <p>
@@ -122,7 +122,7 @@ export default function Component() {
                 </Button>
                 <Button
                   variant="outline"
-                  className="w-full text-black"
+                  className="w-full flex gap-4 text-black"
                   size="lg"
                 >
                   <p>
