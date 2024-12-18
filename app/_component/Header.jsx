@@ -36,7 +36,7 @@ function Header() {
           <Image src={logo} className="w-[180.08px] h-[36px]" alt="Logo" />
         </div>
         <div className="md:hidden">
-          <FaBars onClick={toggleMenu} className="cursor-pointer text-2xl text-[#005C73]" />
+          <FaBars onClick={toggleMenu} className="cursor-pointer text-xl text-[#005C73]" />
         </div>
         <nav
           className={`md:flex justify-around ${
