@@ -144,9 +144,9 @@ export default function Component() {
                   size="lg"
                 >
                   <p>
-                    <FaApple />
+                    <FaApple className="text-2xl"/>
                   </p>
-                  <p> Sign Up with Apple</p>
+                  <p className="text-xs"> Sign Up with Apple</p>
                 </Button>
               </div>
             </form>
