@@ -5,8 +5,9 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Image from "next/image";
 import Link from "next/link";
-import { FaFacebook, FaGoogle } from "react-icons/fa";
+import { FaSquareFacebook } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa6";
+import { FcGoogle } from "react-icons/fc";
 
 export default function Component() {
   return (
@@ -48,6 +49,7 @@ export default function Component() {
                   placeholder="Enter full name"
                   type="email"
                   required
+                
                 />
               </div>
 
@@ -109,7 +111,7 @@ export default function Component() {
                   <div className="w-full border-t border-gray-200" />
                 </div>
                 <div className="relative flex justify-center text-sm">
-                  <span className="px-2  text-gray-500">or</span>
+                  <span className="px-2  text-">or</span>
                 </div>
               </div>
 
@@ -117,28 +119,28 @@ export default function Component() {
               <Link href={"/login/fblogin"}>
               <Button
                   variant="outline"
-                  className="w-full text-black"
+                  className="w-full flex justify-around text-black border border-blue-500"
                   size="lg"
                 >
                   <p>
-                    <FaFacebook />
+                  <FaSquareFacebook className="text-blue-500" />
                   </p>
-                  <p> Sign Up with Facebook</p>
+                  <p className="pl-20"> Sign Up with Facebook</p>
                 </Button>
               </Link>
                 <Button
                   variant="outline"
-                  className="w-full text-black"
+                  className="w-full flex justify-around border border-pink-500 text-black"
                   size="lg"
                 >
                   <p>
-                    <FaGoogle />
+                  <FcGoogle  className="pr-6"/>
                   </p>
-                  <p> Sign Up with Google</p>
+                  <p className="pl-8"> Sign Up with Google</p>
                 </Button>
                 <Button
                   variant="outline"
-                  className="w-full text-black"
+                  className="w-full flex justify-around  border border-black text-black"
                   size="lg"
                 >
                   <p>

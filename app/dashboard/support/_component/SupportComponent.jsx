@@ -10,9 +10,9 @@ export default function SupportPage() {
 
   return (
     <div className="container mx-auto py-12 grid gap-8 max-w-7xl">
-      <div className="grid md:grid-cols-2 gap-8">
-        {/* Request Support Section */}
-        <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center">
+      <div className="grid md:grid-cols-2 m-4 gap-8">
+  
+        <div className="bg-[#F2FDFF] rounded-lg p-8 flex flex-col items-center text-center">
           <div className="h-12 w-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
             <User className="h-6 w-6 text-blue-500" />
           </div>
@@ -29,7 +29,7 @@ export default function SupportPage() {
         </div>
 
         {/* FAQs and Articles Section */}
-        <div className="bg-white rounded-lg p-8 flex flex-col items-center text-center">
+        <div className="bg-[#F2FDFF] rounded-lg p-8 flex flex-col items-center text-center">
           <div className="h-12 w-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
             <User className="h-6 w-6 text-blue-500" />
           </div>
@@ -47,7 +47,7 @@ export default function SupportPage() {
       </div>
 
       {/* Report Error Section */}
-      <div className="max-w-md mx-auto bg-white rounded-lg p-8 flex flex-col items-center text-center">
+      <div className="max-w-md mx-auto bg-[#F2FDFF] rounded-lg p-8 flex flex-col items-center text-center">
         <div className="h-12 w-12 bg-blue-50 rounded-full flex items-center justify-center mb-4">
           <User className="h-6 w-6 text-blue-500" />
         </div>
@@ -59,8 +59,6 @@ export default function SupportPage() {
           Contact support
         </button>
       </div>
-
-      {/* Support Modal */}
       <Dialog open={showSupportModal} onOpenChange={setShowSupportModal}>
         <DialogContent className="sm:max-w-md">
           <DialogHeader>

@@ -263,7 +263,7 @@ import { VscRobot } from "react-icons/vsc";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import Image from "next/image";
-import { logo } from "@/app/img";
+import { Ai, logo } from "@/app/img";
 import { FaPeopleGroup } from "react-icons/fa6";
 import SignOutModal from "./SignOutModal";
 import { HomeIcon } from "lucide-react";
@@ -319,7 +319,7 @@ const Sidebar = () => {
           isCollapsed ? "justify-center" : "justify-center"
         }`}
       >
-        {isCollapsed ? "D" : <Image src={logo} className="w-28 h-12" />}
+        {isCollapsed ? "D" : <Image src={logo} className="w-28 h-12" alt="Logo" />}
       </div>
 
       {/* Menu Items */}
@@ -462,7 +462,7 @@ const Sidebar = () => {
               "/support"
             )}`}
           >
-            <Link href="/support" className="flex items-center gap-4">
+            <Link href="/dashboard/support" className="flex items-center gap-4">
               <FiHelpCircle size={24} />
               {!isCollapsed && <span className="font-semibold">Support</span>}
             </Link>
