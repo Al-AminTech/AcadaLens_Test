@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 app.use(express.json())
 app.use(cors())
 
-app.use('/api', landingPage )
+app.use('', landingPage )
 app.use('/user', userRoute)
 app.use('/admin', adminRoute)
 
