@@ -2,8 +2,8 @@ import express from 'express';
 
 const Router = express.Router();
 
-Router.route('/user').get(()=>{
-    console.log('user homepage')
+Router.route('admin').get(()=>{
+    console.log('admin homepage')
 })
 
 export default Router;
