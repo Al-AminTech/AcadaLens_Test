@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "Server.ts",
   "scripts": {
-    "start": "nodemon --watch Servers --exec ts-node Servers/Server.ts",
-    "dev": "nodemon --exec ts-node Servers/Server.ts",
+    "start": "npm run dev",
+    "dev": "ts-node-dev --respawn --transpile-only ./Servers/Server.ts",
     "type-check": "tsc --noEmit"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@types/morgan": "^1.9.9",
@@ -19,6 +20,7 @@
     "@types/pg": "^8.11.10",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
   },
   "dependencies": {
