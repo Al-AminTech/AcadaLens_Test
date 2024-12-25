@@ -11,6 +11,5 @@ export interface CustomError extends Error{
 }
 export interface UserActivityProperties {
     token: string;
-    password: string;
     payload:object
 }
