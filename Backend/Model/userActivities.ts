@@ -9,16 +9,16 @@ dotenv.config({path: './config.env'})
 class userActivityManager{
     private userProperties: UserActivityProperties;
     private token:string
-    private password: string ;
-    private payload: { name: string; email: string };
-    constructor(payload:{ name: string; email: string },  password:string){
+    private payload: { name: string; email: string; password: string; phonenumber: number };
+
+    constructor(payload:{ name: string; email: string; password: string; phonenumber: number }){
         
         this.token = userActivityManager.generateToken(payload);
-        this.password   = password;
+        // this.password   = password;
         this.payload = payload; 
         this.userProperties = {
         token: this.token,
-        password: this.password,
+        // password: this.password,
         payload:payload
     };
     }
@@ -32,18 +32,26 @@ class userActivityManager{
     createduser = async():Promise<any>=>{
         const client = await Pool.connect(); 
         try {
-                const hashedPassword = await userActivityManager.hashPassword(this.password, 12);
+                const hashedPassword = await userActivityManager.hashPassword((this.payload as any).password, 12);
 
-                const query = `INSERT INTO users (name, email, password) VALUES ($1, $2, $3) RETURNING *`;
-
+                const query = `INSERT INTO users (name, email, password,phonenumber) VALUES ($1, $2, $3,$4) RETURNING *`;
             
-                const result = await client.query(query, [(this.payload as any).name, (this.payload as any).email, hashedPassword]);
+                const result = await client.query(query, [
+                    this.payload.name,
+                    this.payload.email,
+                    hashedPassword,
+                    this.payload.phonenumber,]);
 
-                return result
+                const newUser = result.rows[0];
+
+                delete newUser.password; 
+        
+                return newUser;
                 
 
             } catch (error) {
-                return  new CustomError('Unable to create user', 400);
+                console.error('Error in user creation:', error);
+                throw  new CustomError('Unable to create user', 400);
 
             }finally{
                 client.release(); 
