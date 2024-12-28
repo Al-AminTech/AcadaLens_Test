@@ -17,10 +17,10 @@ import { Profile } from "@/app/img";
 
 export default function Cprofile() {
   return (
-    <div className="min-h-screen bg-background ml-3">
-      {/* Header */}
+    <div className="min-h-screen ">
+     
       <header className="border-b">
-        <div className="container flex items-center justify-between py-4">
+        <div className=" flex items-center justify-between py-4">
           <div className="relative flex w-full max-w-sm items-center">
             <Search className="absolute left-2 h-4 w-4 text-muted-foreground" />
             <Input

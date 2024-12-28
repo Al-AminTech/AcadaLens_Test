@@ -52,7 +52,7 @@ function Header() {
         }`}
       >
         <div>
-          <Image src={logo} className="w-[180.08px] h-[36px]" alt="Logo" />
+          <Image src={logo} className="w-[120.08px] h-[36px]" alt="Logo" />
         </div>
         <div className="md:hidden">
           <FaBars onClick={toggleMenu} className="cursor-pointer text-xl text-[#005C73]" />

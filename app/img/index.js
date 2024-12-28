@@ -19,6 +19,7 @@ import bed from "./bed.png"
 import Profile from "./Avatar.png"
 import UnilroinLogo from "./Unilorinlogo.png"
 import Community from "./community.png"
+import Social from "./Social.png"
 export {
   logo,
   hero,
@@ -40,5 +41,6 @@ export {
   bed,
   Profile,
   UnilroinLogo,
-  Community
+  Community,
+  Social
 };

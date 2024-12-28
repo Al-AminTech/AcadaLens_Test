@@ -20,13 +20,13 @@ function Footer() {
   ];
 
   return (
-    <div className="bg-[#313131] pb-5">
+    <div className="bg-[#313131] pb-5  flex flex-col md:flex-row  gap-0 md:gap-20 px-0 md:px-4">
       <div>
-        <Image src={footer} className="w-72 pt-4 pl-3" />
+        <Image src={footer} className="w-52 pt-10" />
       </div>
       <div className="flex flex-col md:flex-row  justify-around items-center">
         <div>
-          <nav className="flex gap-6  md:gap-20  justify-around pt-24 md:pt-0">
+          <nav className="flex gap-6  md:gap-40  justify-around pt-24 md:pt-0">
             <ul className="flex gap-4 flex-col">
               <h1 className="font-bold text-2xl text-white">Pages</h1>
               {MenuList.map((item, i) => (

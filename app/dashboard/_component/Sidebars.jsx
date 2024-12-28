@@ -319,7 +319,11 @@ const Sidebar = () => {
           isCollapsed ? "justify-center" : "justify-center"
         }`}
       >
-        {isCollapsed ? "D" : <Image src={logo} className="w-28 h-12" alt="Logo" />}
+        {isCollapsed ? (
+          "D"
+        ) : (
+          <Image src={logo} className="w-28 h-12" alt="Logo" />
+        )}
       </div>
 
       {/* Menu Items */}
@@ -351,16 +355,14 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-          <button
+            <button
               onClick={toggleCommunityDropdown}
               className={`flex items-center gap-2 p-3 m-3 rounded-md ${isActive(
                 "/ailearning"
               )}`}
             >
               <FaPeopleGroup size={24} />
-              {!isCollapsed && (
-                <span className="font-semibold">Community</span>
-              )}
+              {!isCollapsed && <span className="font-semibold">Community</span>}
               {!isCollapsed && (
                 <FiChevronDown
                   className={`ml-auto text-lg font-bold transform ${
@@ -377,17 +379,27 @@ const Sidebar = () => {
                     "/dashboard/community/home"
                   )}`}
                 >
-                  <b><HomeIcon/></b>
-                  <Link href="/dashboard/community/home" className="font-bold">Home</Link>
-
+                  <b>
+                    <HomeIcon />
+                  </b>
+                  <Link href="/dashboard/community/home" className="font-bold">
+                    Home
+                  </Link>
                 </li>
                 <li
                   className={`flex items-center gap-4 p-2 m-1 ${isActive(
                     "/dashboard/community/profile"
                   )}`}
                 >
-                  <b><IoPerson /></b>
-                  <Link href="/dashboard/community/profile" className="font-bold">Profile</Link>
+                  <b>
+                    <IoPerson />
+                  </b>
+                  <Link
+                    href="/dashboard/community/profile"
+                    className="font-bold"
+                  >
+                    Profile
+                  </Link>
                 </li>
               </ul>
             )}
@@ -422,8 +434,12 @@ const Sidebar = () => {
                     "/dashboard/ai/aiclass"
                   )}`}
                 >
-                  <b><VscRobot/></b>
-                  <Link href="/dashboard/ai/aiclass" className="font-bold">AI Classroom</Link>
+                  <b>
+                    <VscRobot />
+                  </b>
+                  <Link href="/dashboard/ai/aiclass" className="font-bold">
+                    AI Classroom
+                  </Link>
                 </li>
                 <li
                   className={`flex items-center gap-4 p-2 ${isActive(
@@ -491,25 +507,26 @@ const Sidebar = () => {
         </ul>
 
         {/* User Profile */}
-        <div className="flex items-center gap-4 p-4">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="User Profile"
-            className="w-10 h-10 rounded-full"
-          />
-          {!isCollapsed && (
-            <div>
-              <p className="text-sm">Bilal Opeyemi</p>
-              <p className="text-xs text-gray-400">opemibilal@example.com</p>
-            </div>
-          )}
-        </div>
+        <div className="flex ">
+          <div className="flex items-center gap-4 p-4">
+            <img
+              src="https://via.placeholder.com/40"
+              alt="User Profile"
+              className="w-10 h-10 rounded-full"
+            />
+            {!isCollapsed && (
+              <div>
+                <p className="text-sm">Bilal Opeyemi</p>
+                <p className="text-xs text-gray-400">opemibilal@example.com</p>
+              </div>
+            )}
+          </div>
 
-        {/* Collapse Icon at the Bottom */}
-        <div className="flex justify-center p-4">
-          <button onClick={toggleSidebar} className="text-gray-500">
-            {isCollapsed ? <FiMenu size={24} /> : <FiChevronLeft size={24} />}
-          </button>
+          <div className="flex justify-center p-4">
+            <button onClick={toggleSidebar} className="text-gray-500">
+              {isCollapsed ? <FiMenu size={24} /> : <FiChevronLeft size={24} />}
+            </button>
+          </div>
         </div>
       </nav>
 

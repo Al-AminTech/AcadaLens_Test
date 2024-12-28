@@ -9,8 +9,8 @@ import UserProfiles from "./UserProfiles";
 
 function Center() {
   return (
-    <div className="flex flex-col gap-7">
-      <div className="flex  justify-between shadow  w-[100%]  p-4 items-center">
+    <div className="flex bg-gray-50 flex-col w-full gap-7">
+      <div className="flex  justify-between bg-white  p-4 items-center">
         <div>
           <h1 className="font-bold text-2xl">Overview Summary</h1>
         </div>
