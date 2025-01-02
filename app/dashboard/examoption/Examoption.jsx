@@ -37,7 +37,7 @@ export default function ExamOptions() {
     <div className="max-w-2xl p-4">
       <div className="flex justify-between items-center mb-6">
         <h1 className="text-3xl font-bold">Set Exam Options</h1>
-        <Search className="w-6 h-6 text-gray-400" />
+        {/* <Search className="w-6 h-6 text-gray-400" /> */}
       </div>
 
       <div className="mb-6">
@@ -106,12 +106,12 @@ export default function ExamOptions() {
         </section>
       </div>
 
-      <div className="mt-8 flex justify-end space-x-4">
-        <Button className="px-6 py-2 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
+      <div className="mt-10 flex justify-start space-x-4">
+        <Button className="px-6 py-2 w-44 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
           Cancel
         </Button>
         <Link href={""}>
-          <Button className="px-6 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
+          <Button className="px-6 w-44 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
             Next
           </Button>
         </Link>

@@ -106,6 +106,7 @@ body {
   .sidebar {
     width: 100%;
     position: absolute;
+    background-color: yellow;
   }
 }
 .hello{
@@ -140,13 +141,13 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust the alpha to control the overlay intensity */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1;
 }
 
 .rent > div {
   position: relative;
-  z-index: 2; /* Ensure content is above the overlay */
+  z-index: 2; 
 }
 
 .learn {
@@ -163,18 +164,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   color: white;
-}
-.scroll-container::-webkit-scrollbar {
-  height: 8px; /* Height for horizontal scrollbar */
-}
-
-.scroll-container::-webkit-scrollbar-thumb {
-  background-color: #005C73;
-  border-radius: 4px;
-}
-
-.scroll-container::-webkit-scrollbar-track {
-  background-color: #E5FAFF;
 }
 .image{
   border-radius:  30px !important;

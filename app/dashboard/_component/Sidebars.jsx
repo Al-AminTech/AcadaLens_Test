@@ -268,13 +268,18 @@ import { FaPeopleGroup } from "react-icons/fa6";
 import SignOutModal from "./SignOutModal";
 import { HomeIcon } from "lucide-react";
 import { AiFillProfile } from "react-icons/ai";
+import { MdKeyboardDoubleArrowLeft } from "react-icons/md";
+import { FaBell } from "react-icons/fa";
+import { GiCancel } from "react-icons/gi";
+import { IoPersonOutline } from "react-icons/io5";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-  const [isAiLearningDropdownOpen, setIsAiLearningDropdownOpen] =
-    useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isAiLearningDropdownOpen, setIsAiLearningDropdownOpen] = useState(false);
   const [isCommunityDropdownOpen, setIsCommunityDropdownOpen] = useState(false);
   const [isSignOutModalOpen, setIsSignOutModalOpen] = useState(false);
+  const [isToggleClicked, setIsToggleClicked] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -306,14 +311,38 @@ const Sidebar = () => {
   };
 
   const isActive = (path) => (pathname === path ? "bg-[#E5FAFF]" : "");
-
+  const toggleMobileSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+  const handleToggleClick = () => {
+    setIsToggleClicked(true);
+  };
   return (
+ <>
+  <button
+  className="fixed top-4 left-4 z-50 text-gray-500 sm:hidden"
+  onClick={() => {
+    toggleMobileSidebar();
+    setIsToggleClicked(!isToggleClicked);
+  }}
+>
+  {isToggleClicked ? <GiCancel size={24} /> : <FiMenu size={24} />}
+</button>
+
     <div
-      className={`fixed top-0 left-0 flex flex-col h-screen bg-white shadow-sm text-gray-500 transition-all duration-300 ${
+       className={`fixed top-0 left-0  flex flex-col h-screen bg-white shadow-sm border-r text-gray-500 transition-transform duration-300 z-40 ${
+        isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+      } sm:translate-x-0 ${
         isCollapsed ? "w-20" : "w-64"
       } flex-shrink-0`}
     >
-      {/* Logo */}
+          {/* <button
+          className="absolute top-4 right-4 sm:hidden"
+          onClick={toggleMobileSidebar}
+        >
+          <FiChevronLeft size={24} />
+        </button> */}
+  
       <div
         className={`flex items-center p-4 text-xl font-bold ${
           isCollapsed ? "justify-center" : "justify-center"
@@ -392,7 +421,7 @@ const Sidebar = () => {
                   )}`}
                 >
                   <b>
-                    <IoPerson />
+                    <IoPersonOutline className="text-lg" />
                   </b>
                   <Link
                     href="/dashboard/community/profile"
@@ -506,9 +535,9 @@ const Sidebar = () => {
           </li>
         </ul>
 
-        {/* User Profile */}
-        <div className="flex ">
-          <div className="flex items-center gap-4 p-4">
+      
+        <div className={`flex  ${isCollapsed ? "flex-col items-center" : "flex-row "} ` }>
+          <div className="flex items-center gap-2 p-2">
             <img
               src="https://via.placeholder.com/40"
               alt="User Profile"
@@ -522,9 +551,9 @@ const Sidebar = () => {
             )}
           </div>
 
-          <div className="flex justify-center p-4">
+          <div className={`flex ${isCollapsed ? "justify-normal" : "justify-center"}  p-3`}>
             <button onClick={toggleSidebar} className="text-gray-500">
-              {isCollapsed ? <FiMenu size={24} /> : <FiChevronLeft size={24} />}
+              {isCollapsed ? <FiMenu size={24} /> : <MdKeyboardDoubleArrowLeft  size={24}/>}
             </button>
           </div>
         </div>
@@ -536,6 +565,7 @@ const Sidebar = () => {
         onConfirm={confirmSignOut}
       />
     </div>
+ </>
   );
 };
 

@@ -6,17 +6,20 @@ import { BiDownArrowAlt } from "react-icons/bi";
 import Exam from "./Exam";
 import Summary from "./Summary";
 import UserProfiles from "./UserProfiles";
+import { FaBell, FaRegBell } from "react-icons/fa";
+import Image from "next/image";
+import { Profile } from "@/app/img";
 
 function Center() {
   return (
-    <div className="flex bg-gray-50 flex-col w-full gap-7">
-      <div className="flex  justify-between bg-white  p-4 items-center">
+    <div className="flex   flex-col gap-7">
+      <div className="flex  justify-between bg-white shadow-sm border-b p-4 items-center">
         <div>
           <h1 className="font-bold text-2xl">Overview Summary</h1>
         </div>
-        <div className="flex gap-7">
-          <IoMdSearch className="text-3xl font-light" />
-          <MdNotificationAdd className="text-red-500 text-3xl" />
+        <div className="flex  items-center gap-4">
+        <Image src={Profile} className="w-10 h-10"/>
+        <FaRegBell className="text-blue-500 text-3xl" />
         </div>
       </div>
       <div>

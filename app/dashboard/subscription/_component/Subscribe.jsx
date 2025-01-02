@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { CreditCard } from 'lucide-react'
+import { TbBrandPaypal } from "react-icons/tb";
 
 export default function PaymentForm() {
   const [state, setState] = useState({
@@ -22,8 +23,8 @@ export default function PaymentForm() {
   }
 
   return (
-    <div className="max-w-[1000px] mx-auto p-6">
-      {/* Header */}
+    <div className="max-w-[1000px]  mx-auto p-6">
+    
       <div className="flex items-center gap-2 mb-6">
         <button className="text-xl">&lt;</button>
         <h1 className="text-xl font-semibold">
@@ -31,7 +32,7 @@ export default function PaymentForm() {
         </h1>
       </div>
 
-      {/* Progress Dots */}
+   
       <div className="flex gap-2 items-center mb-8">
         <div className="w-3 h-3 rounded-full bg-cyan-500"></div>
         <div className="w-16 border-t-2 border-cyan-500"></div>
@@ -42,7 +43,6 @@ export default function PaymentForm() {
         <div className="w-3 h-3 rounded-full bg-gray-200"></div>
       </div>
 
-      {/* User Info Banner */}
       <div className="bg-blue-50 p-4 rounded-lg mb-8">
         <div className="flex items-center gap-2">
           <div className="w-6 h-6 rounded-full bg-gray-200"></div>
@@ -75,13 +75,14 @@ export default function PaymentForm() {
                   Credit Card
                 </button>
                 <button
-                  className={`px-6 py-3 rounded-lg ${
+                  className={`px-6 py-3  flex items-center gap-2 rounded-lg ${
                     state.paymentMethod === 'paypal' 
                       ? 'bg-cyan-800 text-white' 
                       : 'border border-gray-300'
                   }`}
                   onClick={() => setPaymentMethod('paypal')}
                 >
+                    <TbBrandPaypal size={20} />
                   PayPal
                 </button>
               </div>

@@ -37,7 +37,7 @@ export default function ConfirmDetails() {
   }
 
   return (
-    <div className="min-h-screen shadow-sm bg-white">
+    <div className="min-h-screen shadow-md w-[60rem] h-[44rem] m-5 bg-white">
       {/* Header */}
       <div className="border-b">
         <div className="px-4 py-2">

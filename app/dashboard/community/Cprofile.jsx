@@ -17,17 +17,18 @@ import { Profile } from "@/app/img";
 
 export default function Cprofile() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen  bg-white shadow-lg w-[64rem] m-6 rounded-lg  p-4">
      
       <header className="border-b">
         <div className=" flex items-center justify-between py-4">
           <div className="relative flex w-full max-w-sm items-center">
-            <Search className="absolute left-2 h-4 w-4 text-muted-foreground" />
-            <Input
+            {/* <Search className="absolute left-2 h-4 w-4 text-muted-foreground" /> */}
+            {/* <Input
               className="pl-8"
               placeholder="Search for community"
               type="search"
-            />
+            /> */}
+            <h2 className="text-xl font-bold ">Profile</h2>
           </div>
           {/* <Button size="icon" variant="ghost">
             <Bell className="h-5 w-5" />

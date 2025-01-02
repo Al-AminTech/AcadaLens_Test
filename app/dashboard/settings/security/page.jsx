@@ -32,8 +32,8 @@ export default function Component() {
   }
 
   return (
-    <div className="pt-10">
-      <div>
+    <div className='bg-white shadow-md w-[42rem] pl-20 mt-10  h-[32rem] m-4 rounded-md ml-10'>
+      <div className=''>
         <h1 className="text-2xl font-bold tracking-tight">Settings</h1>
         <p className="text-sm text-muted-foreground mt-2">
           In order to protect your account, make sure your password:
@@ -81,6 +81,7 @@ export default function Component() {
             type="password"
             value={currentPassword}
             onChange={(e) => setCurrentPassword(e.target.value)}
+            className="w-96"
           />
         </div>
         <div className="space-y-2">
@@ -90,10 +91,11 @@ export default function Component() {
             type="password"
             value={newPassword}
             onChange={handleNewPasswordChange}
+             className="w-96"
           />
         </div>
         <Button
-          className="w-full"
+          className=" w-96"
           disabled={!Object.values(validations).every(Boolean)}
         >
           Change Password

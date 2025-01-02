@@ -3,6 +3,7 @@
 import { ArrowLeft } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import Link from 'next/link'
 
 export default function ContactForm() {
   return (
@@ -55,7 +56,7 @@ export default function ContactForm() {
             id="email"
             type="email"
             defaultValue="sanniahmedagboola@gmail.com"
-            className="w-[30rem] px-4 h-10 rounded-full border"
+            className="w-full px-4 h-10 rounded-full border"
           />
         </div>
 
@@ -71,7 +72,7 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className="flex justify-between items-center pt-4">
+        <div className="flex items-center pt-4">
           <Button
             variant="outline"
             className="px-8 py-2 rounded-full border-2"
@@ -83,12 +84,14 @@ export default function ContactForm() {
           >
             Edit
           </Button>
-          <Button
+       <Link href={"/dashboard/subscription/subscribe"}>
+       <Button
             variant="outline"
             className="px-8 py-2 rounded-full border-2"
           >
             Next
           </Button>
+       </Link>
         </div>
       </form>
     </div>

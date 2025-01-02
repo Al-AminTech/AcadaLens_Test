@@ -4,7 +4,7 @@ import ProfileForm from '../ProfileForm'
 
 function page() {
   return (
-    <div>
+    <div className='bg-white shadow-lg w-[60rem] h-[44rem] m-4 rounded-md '>
       <ProfileHeader/>
       <ProfileForm/>
     </div>

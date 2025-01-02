@@ -4,7 +4,7 @@ import Sidebar from '../_component/Sidebars'
 
 function page() {
   return (
-    <div className=''>
+    <div >
       <Sinterface/>
     </div>
   )

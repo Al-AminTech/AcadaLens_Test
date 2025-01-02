@@ -37,7 +37,7 @@ export default function Calendar() {
   
 
   return (
-    <div className="min-h-screen shadow-sm w-full bg-white">
+    <div className="min-h-screen w-[60rem] h-[44rem] shadow-lg m-4 bg-white">
       {/* Header */}
       <div className="border-b">
         <div className="px-4 py-2">
@@ -51,9 +51,9 @@ export default function Calendar() {
       <div className="flex">
         {/* Sidebar */}
         <div className="w-96 border-r p-6">
-          <div className="mb-8">
+          {/* <div className="mb-8">
             <img src="/acada-lens-logo.png" alt="Acada Lens" className="h-8" />
-          </div>
+          </div> */}
 
           <div className="space-y-6">
             <div className="flex items-center gap-4">
