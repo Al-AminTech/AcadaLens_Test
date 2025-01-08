@@ -110,7 +110,7 @@ export default function ExamOptions() {
         <Button className="px-6 py-2 w-44 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
           Cancel
         </Button>
-        <Link href={""}>
+        <Link href={"/dashboard/examination/examinstruct"}>
           <Button className="px-6 w-44 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
             Next
           </Button>

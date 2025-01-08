@@ -18,7 +18,7 @@ function Start() {
           <p className="pb-10 font-medium">Select mode of exam</p>
           <div className="flex flex-col gap-3">
             <div>
-          <Link href={"/dashboard/examoption"}>
+          <Link href={"/dashboard/examination/examoption"}>
           <Button className="bg-[#005C73] w-72">Single Mode</Button>
           </Link>
             </div>
