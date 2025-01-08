@@ -54,7 +54,7 @@ export default function ExamOptions() {
           <h2 className="text-xl font-semibold text-primary mb-3">
             Select subjects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {subjects.map((subject) => (
               <label key={subject} className="flex items-center space-x-3">
                 <input
@@ -107,9 +107,11 @@ export default function ExamOptions() {
       </div>
 
       <div className="mt-10 flex justify-start space-x-4">
-        <Button className="px-6 py-2 w-44 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
+      <Link href={"/dashboard/examination"}>
+      <Button className="px-6 py-2 w-44 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
           Cancel
         </Button>
+      </Link>
         <Link href={"/dashboard/examination/examinstruct"}>
           <Button className="px-6 w-44 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
             Next

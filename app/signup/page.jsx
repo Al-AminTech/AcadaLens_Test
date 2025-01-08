@@ -22,7 +22,7 @@ export default function Component() {
             <div className="flex justify-between items-start mb-2">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900 mb-1">
-                Create a new account
+                  Create a new account
                 </h1>
                 <p className="text-sm text-gray-600">
                   Already have an account?{" "}
@@ -30,7 +30,7 @@ export default function Component() {
                     href="/login"
                     className="text-blue-600 hover:underline font-semibold"
                   >
-                   Login
+                    Login
                   </Link>
                 </p>
               </div>
@@ -42,14 +42,24 @@ export default function Component() {
             <form className="space-y-4">
               <div className="space-y-2">
                 <Label htmlFor="email" className="text-black">
-                  Email
+                  Name
                 </Label>
                 <Input
                   id="email"
                   placeholder="Enter full name"
                   type="email"
                   required
-                
+                />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="email" className="text-black">
+                  Email
+                </Label>
+                <Input
+                  id="email"
+                  type="email"
+                  placeholder="Enter Your Email"
+                  required
                 />
               </div>
 
@@ -66,7 +76,7 @@ export default function Component() {
               </div>
               <div className="space-y-2">
                 <Label htmlFor="password" className="text-black">
-                 Confirm  Password
+                  Confirm Password
                 </Label>
                 <Input
                   id="password"
@@ -94,61 +104,57 @@ export default function Component() {
                     htmlFor="remember"
                     className="text-sm text-black font-normal"
                   >
-                  I agree to the Terms of Use and Privacy Policy
+                    I agree to the Terms of Use and Privacy Policy
                   </Label>
                 </div>
               </div>
 
               <Button
-                className="w-full bg-teal-600 hover:bg-teal-700"
+                className="w-full bg-[#005C73] hover:bg-[#005C73] text-lg"
                 size="lg"
               >
                 Sign Up
               </Button>
 
               <div className="relative my-4">
-                <div className="absolute inset-0 flex items-center">
-                  <div className="w-full border-t border-gray-200" />
-                </div>
-                <div className="relative flex justify-center text-sm">
-                  <span className="px-2  text-">or</span>
-                </div>
-              </div>
+  <div className="absolute inset-0 flex items-center">
+    <div className="w-full border-t border-black"></div>
+  </div>
+  <div className="relative flex justify-center text-sm">
+    <span className="px-2 bg-[#F2FDFF] text-black font-semibold text-lg"  >or</span>
+  </div>
+</div>
 
-              <div className="space-y-3">
-              <Link href={"/login/fblogin"}>
-              <Button
-                  variant="outline"
-                  className="w-full flex justify-around text-black border border-blue-500"
-                  size="lg"
-                >
-                  <p>
-                  <FaSquareFacebook className="text-blue-500" />
-                  </p>
-                  <p className="pl-20"> Sign Up with Facebook</p>
-                </Button>
-              </Link>
-                <Button
-                  variant="outline"
-                  className="w-full flex justify-around border border-pink-500 text-black"
-                  size="lg"
-                >
-                  <p>
-                  <FcGoogle  className="pr-6"/>
-                  </p>
-                  <p className="pl-8"> Sign Up with Google</p>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full flex justify-around  border border-black text-black"
-                  size="lg"
-                >
-                  <p>
-                    <FaApple className="text-2xl"/>
-                  </p>
-                  <p className="text-xs"> Sign Up with Apple</p>
-                </Button>
-              </div>
+
+<div className="space-y-4">
+  <Link href="/login/fblogin">
+    <Button
+      variant="outline"
+      className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
+      size="lg"
+    >
+      <FaSquareFacebook className="text-blue-500 text-2xl mr-4" />
+      <span className="text-lg font-medium">Sign up with Facebook</span>
+    </Button>
+  </Link>
+  <Button
+    variant="outline"
+    className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FcGoogle className="text-2xl mr-4" />
+    <span className="text-lg font-medium">Sign up with Google</span>
+  </Button>
+  <Button
+    variant="outline"
+    className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FaApple className="text-black text-2xl mr-4" />
+    <span className="text-lg font-medium">Sign up with Apple</span>
+  </Button>
+</div>
+
             </form>
 
             {/* <div className="absolute bottom-0 left-0 w-48">

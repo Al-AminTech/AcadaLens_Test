@@ -54,7 +54,7 @@ export default function ExamInstructions() {
 
   return (
     <div className="min-h-screen  p-4 md:p-8">
-      <Card className="max-w-3xl mx-auto">
+      <div className=" shadow-md w-[60rem] pb-10">
         <CardHeader className="space-y-6 border-b p-6">
           <div className="flex items-start justify-between">
             <div>
@@ -127,7 +127,7 @@ export default function ExamInstructions() {
             </Button>
           </div>
         </CardFooter>
-      </Card>
+      </div>
     </div>
   )
 }
