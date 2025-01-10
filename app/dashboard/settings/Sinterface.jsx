@@ -13,7 +13,7 @@ export default function Sinterface() {
         <h1 className="font-bold text-2xl pl-5">Settings</h1>
         <div className="flex  items-center gap-4">
         <Image src={Profile} className="w-10 h-10"/>
-        <FaRegBell className="text-blue-500 text-3xl" />
+        <FaRegBell className="text-blue-500 text-2xl" />
         </div>
       </div>
       <div className="w-full flex flex-col gap-7 pl-4 pt-10 max-w-3xl  ml-4 p-4 space-y-4">

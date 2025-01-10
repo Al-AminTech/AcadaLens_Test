@@ -19,7 +19,7 @@ function Center() {
         </div>
         <div className="flex  items-center gap-4">
         <Image src={Profile} className="w-10 h-10"/>
-        <FaRegBell className="text-blue-500 text-3xl" />
+        <FaRegBell className="text-blue-500 text-2xl" />
         </div>
       </div>
       <div>

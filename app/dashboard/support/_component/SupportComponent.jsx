@@ -24,13 +24,13 @@ export default function SupportPage() {
   return (
     <div className="bg-white w-[60rem] h-[44rem] m-4  rounded-md  shadow-lg">
       <div className="flex justify-between m-2">
-        <h1 className="font-bold text-xl">Support</h1>
+        <h1 className="font-bold text-2xl">Support</h1>
         <div className="flex items-center">
           <div className="flex items-center gap-3 pr-5">
             <Image src={Profile} className="w-10 h-10" />
             <p>Bilal Opeyemi</p>
           </div>
-          <FaRegBell className="text-blue-500 text-3xl" />
+          <FaRegBell className="text-blue-500 text-2xl" />
         </div>
       </div>
       <div className="container mx-auto py-5  ml-10 grid gap-8 max-w-7xl">

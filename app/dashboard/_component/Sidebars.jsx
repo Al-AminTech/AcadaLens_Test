@@ -274,6 +274,7 @@ import { GiCancel } from "react-icons/gi";
 import { IoPersonOutline } from "react-icons/io5";
 import { MdOutlineDashboard } from "react-icons/md";
 import { BsHeadset } from "react-icons/bs";
+import { FaRegCreditCard } from "react-icons/fa6";
 
 const Sidebar = () => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -496,7 +497,7 @@ const Sidebar = () => {
                 href="/dashboard/subscription"
                 className="flex items-center gap-4"
               >
-                <MdSubscriptions size={24} />
+                <FaRegCreditCard  size={24} />
                 {!isCollapsed && (
                   <span className="font-semibold">Subscription</span>
                 )}
