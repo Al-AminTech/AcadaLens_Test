@@ -48,7 +48,7 @@ function Header() {
     <div>
       <div
         className={`flex justify-between  items-center bg-white shadow-md p-4  transition-all duration-300 ease-in-out ${
-          isFixed ? "fixed top-0 left-0 right-0 z-50 w-full" : "rounded-md mx-0 md:mx-20 m-4"
+          isFixed ? "fixed top-0 left-0 right-0 z-50 w-full  duration-300" : "rounded-md mx-0 md:mx-20 m-4"
         }`}
       >
         <div>

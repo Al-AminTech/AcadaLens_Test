@@ -336,7 +336,7 @@ const Sidebar = () => {
       <div
         className={`fixed top-0 left-0  flex flex-col h-screen bg-white shadow-sm border-r text-gray-500 transition-transform duration-300 z-40 ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } sm:translate-x-0 ${isCollapsed ? "w-20" : "w-64"} flex-shrink-0`}
+        } sm:translate-x-0 ${isCollapsed ? "w-24" : "w-64"} flex-shrink-0`}
       >
         {/* <button
           className="absolute top-4 right-4 sm:hidden"
@@ -351,7 +351,7 @@ const Sidebar = () => {
           }`}
         >
           {isCollapsed ? (
-            "D"
+           <Image src={logo} className="w-810h-8" alt="Logo" />
           ) : (
             <Image src={logo} className="w-28 h-12" alt="Logo" />
           )}

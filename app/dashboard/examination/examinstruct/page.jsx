@@ -114,13 +114,13 @@ export default function ExamInstructions() {
           <div className="flex flex-col sm:flex-row gap-4 w-full">
             <Button 
               variant="outline" 
-              className="flex-1 h-11"
+              className="flex-1 h-11 border border-[#005C73] text-[#005C73]"
           
             >
               Cancel
             </Button>
             <Button 
-              className="flex-1 h-11 bg-primary hover:bg-primary/90"
+              className="flex-1 h-11 bg-[#005C73] hover:bg-primary/90"
       
             >
               Start Examination

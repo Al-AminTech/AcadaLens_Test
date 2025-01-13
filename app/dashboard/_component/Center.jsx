@@ -3,7 +3,7 @@ import { IoMdSearch } from "react-icons/io";
 import { MdNotificationAdd } from "react-icons/md";
 import { BiUpArrowAlt } from "react-icons/bi";
 import { BiDownArrowAlt } from "react-icons/bi";
-import Exam from "./Exam";
+import Exam from "./ExamFeedback";
 import Summary from "./Summary";
 import UserProfiles from "./UserProfiles";
 import { FaBell, FaRegBell } from "react-icons/fa";

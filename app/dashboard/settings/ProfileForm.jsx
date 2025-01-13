@@ -5,7 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useState } from "react";
-import { Eye, EyeOff } from "lucide-react"; // Assuming these icons are imported
+import { Eye, EyeOff } from "lucide-react";
+import Link from "next/link";
 
 export default function ProfileForm() {
   const [showPassword, setShowPassword] = useState(false);
@@ -20,7 +21,7 @@ export default function ProfileForm() {
               <Input
                 id="firstName"
                 placeholder="Enter your first name"
-                className="w-80 h-12"
+                className="w-full h-12"
               />
             </div>
             <div className="space-y-2">
@@ -28,7 +29,7 @@ export default function ProfileForm() {
               <Input
                 id="lastName"
                 placeholder="Enter your last name"
-                className="w-80 h-12"
+                className="w-full h-12"
               />
             </div>
           </div>
@@ -44,7 +45,7 @@ export default function ProfileForm() {
               <Input
                 id="phone"
                 placeholder="Enter your phone number"
-                className="w-80 h-12"
+                className="w-full h-12"
               />
             </div>
             <div className="space-y-2">
@@ -52,7 +53,7 @@ export default function ProfileForm() {
               <Input
                 id="dob"
                 placeholder="Enter your date of birth"
-                className="w-80 h-12"
+                className="w-full h-12"
               />
             </div>
           </div>
@@ -64,7 +65,7 @@ export default function ProfileForm() {
                   id="password"
                   type={showPassword ? "text" : "password"}
                   placeholder="Enter your password"
-                  className="w-[30rem] h-10"
+                  className="w-[45rem] h-10"
                 />
                 <Button
                   type="button"
@@ -80,32 +81,46 @@ export default function ProfileForm() {
                   )}
                 </Button>
               </div>
-              <Button variant="outline" className="text-blue-500">
+              <Button
+                variant="outline"
+                className="text-[#0090B2] hover:bg-white hover:text-[#0090B2] border border-[#0090B2] "
+              >
                 change password
               </Button>
             </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="email">Email address</Label>
-            <Input
-              id="email"
-              type="email"
-              placeholder="Enter your email address"
-              className="h-10"
-            />
+          <div className="flex  items-center gap-3 justify-between">
+            <div className="space-y-2 w-full">
+              <Label htmlFor="email">Email address</Label>
+              <Input
+                id="email"
+                type="email"
+                placeholder="Enter your email address"
+                className="h-10 w-full"
+              />
+            </div>
+
+            <div className="space-y-2 flex flex-col w-full ">
+              <Label htmlFor="role">Your Role</Label>
+              <select
+                name=""
+                id=""
+                className="w-full border shadow-sm p-2 rounded-lg text-gray-500 "
+              >
+                <option value="jamb">Jamb</option>
+                <option value="Postutme">PostUtme</option>
+              </select>
+            </div>
           </div>
 
-          <div className="space-y-2">
-            <Label htmlFor="role">Your Role</Label>
-            <Input id="role" placeholder="Enter your role" />
-          </div>
-
-          <div className="flex justify-between items-center pt-4">
-            <Button variant="outline">Cancel</Button>
+          <div className="flex gap-4 items-center pt-4">
+            <Link href={"/dashboard/settings"}>
+              <Button variant="outline" className="w-44 h-10 border border-[#0090B2] text-[#0090B2]">Cancel</Button>
+            </Link>
             <div className="space-x-2">
-              <Button className="bg-teal-700 hover:bg-teal-800 text-white">
-                Edit
+              <Button className="bg-[#0090B2] w-40 h-10 text-md hover:bg-teal-800 text-white">
+                Next
               </Button>
             </div>
           </div>

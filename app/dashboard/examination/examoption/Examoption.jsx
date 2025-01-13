@@ -71,18 +71,33 @@ export default function ExamOptions() {
 
         <section>
           <h2 className="text-xl font-semibold text-primary mb-3">Set time</h2>
-          <div className="space-y-2">
-            {["25 Min/Subject", "30 Min/Subject"].map((time) => (
-              <label key={time} className="flex items-center space-x-3">
-                <input
-                  type="radio"
-                  checked={timePerSubject === time}
-                  onChange={() => setTimePerSubject(time)}
-                  className="form-radio h-5 w-5 text-primary"
-                />
-                <span className="text-gray-700">{time}</span>
-              </label>
-            ))}
+          <div className="flex  gap-10">
+            <div className="space-y-2">
+              {["25 Min/Subject", "30 Min/Subject"].map((time) => (
+                <label key={time} className="flex items-center space-x-3">
+                  <input
+                    type="radio"
+                    checked={timePerSubject === time}
+                    onChange={() => setTimePerSubject(time)}
+                    className="form-radio h-5 w-5 text-primary"
+                  />
+                  <span className="text-gray-700">{time}</span>
+                </label>
+              ))}
+            </div>
+            <div className="space-y-2">
+              {["25 Min/Subject", "30 Min/Subject"].map((time) => (
+                <label key={time} className="flex items-center space-x-3">
+                  <input
+                    type="radio"
+                    checked={timePerSubject === time}
+                    onChange={() => setTimePerSubject(time)}
+                    className="form-radio h-5 w-5 text-primary"
+                  />
+                  <span className="text-gray-700">{time}</span>
+                </label>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -107,13 +122,13 @@ export default function ExamOptions() {
       </div>
 
       <div className="mt-10 flex justify-start space-x-4">
-      <Link href={"/dashboard/examination"}>
-      <Button className="px-6 py-2 w-44 bg-gray-50 border border-primary text-primary rounded-md hover:bg-primary/10">
-          Cancel
-        </Button>
-      </Link>
+        <Link href={"/dashboard/examination"}>
+          <Button className="px-6 py-2 w-44 bg-white border border-[#005C73] text-[#005C73] rounded-md hover:bg-primary/10">
+            Cancel
+          </Button>
+        </Link>
         <Link href={"/dashboard/examination/examinstruct"}>
-          <Button className="px-6 w-44 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90">
+          <Button className="px-6 w-44 py-2 bg-[#005C73] text-white rounded-md hover:bg-primary/90">
             Next
           </Button>
         </Link>
