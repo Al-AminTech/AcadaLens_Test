@@ -1,10 +1,10 @@
 import React from 'react'
-import CreatePassword from './_component/ResetPssword'
+import Verification from '../_component/VerifyEmail'
 
 function page() {
   return (
     <div>
-      <CreatePassword/>
+    <Verification/>
     </div>
   )
 }

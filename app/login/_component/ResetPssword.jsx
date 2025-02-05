@@ -5,15 +5,51 @@ import { Sparkles } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import axios from 'axios'
 
 export default function CreatePassword() {
+  const [token, setToken] = useState('')
   const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [error, setError] = useState('')
+  const [loading, setLoading] = useState(false)
 
-  const handleSubmit = (e) => {
+  const validatePassword = (password) => {
+    const passwordRegex = /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{5,}$/
+    return passwordRegex.test(password)
+  }
+
+  const handleSubmit = async (e) => {
     e.preventDefault()
-    // Add your password validation and submission logic here
-    console.log('Password submitted:', password)
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      setError('Passwords do not match')
+      return
+    }
+
+    // Validate password
+    if (!validatePassword(password)) {
+      setError('Password must be at least 5 characters long and contain at least one uppercase letter, one number, and one special character')
+      return
+    }
+
+    setError('')
+    setLoading(true)
+
+    try {
+      const response = await axios.post('https://academiabackend-1-1ekf.onrender.com/user/resetpassword', {
+        token,
+        password,
+        confirmPassword
+      })
+      console.log('Password reset successful:', response.data)
+    } catch (error) {
+      console.error('Error resetting password:', error)
+      setError('Failed to reset password. Please try again.')
+    } finally {
+      setLoading(false)
+    }
   }
 
   return (
@@ -28,7 +64,21 @@ export default function CreatePassword() {
         </p>
       </div>
 
+      {/* {error && <p className="text-red-500 text-sm">{error}</p>} */}
+
       <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="space-y-2">
+          <Label htmlFor="token">Reset Token</Label>
+          <Input
+            id="token"
+            type="text"
+            value={token}
+            onChange={(e) => setToken(e.target.value)}
+            className="border-muted-foreground/20"
+            required
+          />
+        </div>
+
         <div className="space-y-2">
           <Label htmlFor="password">Password</Label>
           <Input
@@ -56,11 +106,11 @@ export default function CreatePassword() {
         <Button 
           type="submit" 
           className="w-full bg-teal-900 hover:bg-teal-800"
+          disabled={loading}
         >
-          Continue
+          {loading ? 'Resetting Password...' : 'Continue'}
         </Button>
       </form>
     </div>
   )
 }
-
