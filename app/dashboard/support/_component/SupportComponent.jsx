@@ -17,22 +17,14 @@ import ConfirmDetails from "./Step2";
 import Link from "next/link";
 import Image from "next/image";
 import { Profile } from "@/app/img";
+import Header from "../../_component/Header";
 export default function SupportPage() {
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [showFaqModal, setShowFaqModal] = useState(false);
 
   return (
     <div className="bg-white w-[60rem] h-[44rem] m-4  rounded-md  shadow-lg">
-      <div className="flex justify-between m-2">
-        <h1 className="font-bold text-2xl">Support</h1>
-        <div className="flex items-center">
-          <div className="flex items-center gap-3 pr-5">
-            <Image src={Profile} className="w-10 h-10" />
-            <p>Bilal Opeyemi</p>
-          </div>
-          <FaRegBell className="text-blue-500 text-2xl" />
-        </div>
-      </div>
+      <Header/>
       <div className="container mx-auto py-5  ml-10 grid gap-8 max-w-7xl">
         <div className="grid md:grid-cols-2 m-2 gap-5">
           <div className="bg-[#FAFEFF]  w-96 h-72 rounded-lg p-8 flex flex-col items-center text-center">

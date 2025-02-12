@@ -110,7 +110,7 @@ function Hersecs() {
           <div>
             <p className="font-medium pt-4 text-justify w-full md:w-[594px]">
               {" "}
-              At ScholaMetis, our mission is to redefine the standards of
+              At AcadaLens, our mission is to redefine the standards of
               professional wear by offering luxury utility tech jackets that do
               not compromise on style, comfort, or functionality. We are
               dedicated to pushing the boundaries of what is possible, crafting
@@ -131,7 +131,7 @@ function Hersecs() {
           <div>
             <p className="font-medium pt-4 text-justify w-full md:w-[586px]">
               {" "}
-              At ScholaMetis, our mission is to redefine the standards of
+              At AcadaLens, our mission is to redefine the standards of
               professional wear by offering luxury utility tech jackets that do
               not compromise on style, comfort, or functionality. We are
               dedicated to pushing the boundaries of what is possible, crafting

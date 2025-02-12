@@ -10,7 +10,7 @@ function Team() {
   return (
     <div className="bg-[#d9f8ffc8]">
       <div className="pt-5 flex flex-col md:flex-row justify-start md:justify-around">
-        <div className="  px-4 ">
+        <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <Link href={"/about/member"}>
             <div className="flex flex-col">

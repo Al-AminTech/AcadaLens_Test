@@ -4,7 +4,7 @@ import React from "react";
 
 function Start() {
   return (
-    <div className="pl-72 pt-20">
+    <div className="pt-20">
       <div>
         <div className="flex flex-col items-center">
           <h1 className="font-bold text-2xl name text-center">

@@ -173,10 +173,12 @@ body {
   color: white;
   height: 100vh;
 }
+
+
+
 .image{
   border-radius:  30px !important;
 }
-
 @media (max-width: 768px) {
   .aboutus {
     background-image: url(./img/image\ 9.png);
@@ -185,6 +187,14 @@ body {
     background-repeat: no-repeat;
     height: 40rem;
     color: white;
+  }
+  .learn {
+    background-image: url(./img/learn.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* min-height: 100vh;  */
+    width: 100%;
   }
 }
 

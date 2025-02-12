@@ -6,7 +6,7 @@ function Summary({name,subject,topic}) {
     <div>
       <div>
         <div className="">
-          <div className="bg-[#E5FAFF] flex gap-5 w-60 items-center h-24 px-3 py-3  rounded-md">
+          <div className="bg-[#E5FAFF] flex gap-5 w-[14.5rem] items-center h-24 px-3 py-3  rounded-md">
             <div className="bg-[#005C73] rounded-sm h-10 pt-2  w-10">
               <p className="text-white text-center font-medium text-xl">{name}</p>
             </div>
