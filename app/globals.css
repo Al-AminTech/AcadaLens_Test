@@ -118,7 +118,7 @@ body {
 }
 .aboutus {
   background-image: url(./img/image\ 9.png);
-  background-size: cover;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 40rem;
@@ -182,7 +182,7 @@ body {
 @media (max-width: 768px) {
   .aboutus {
     background-image: url(./img/image\ 9.png);
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 40rem;

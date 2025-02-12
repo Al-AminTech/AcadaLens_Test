@@ -21,7 +21,7 @@ function Contact() {
         </h1>
       </div>
       <div className="flex flex-col md:flex-row items-center pt-10 justify-start md:justify-around ">
-        <div className="pl-5 pt-5 ">
+        <div className="pl-0 md:pl-5 pt-5 ">
           <form>
             <h1 className="font-bold text-black text-3xl ">Submit a request</h1>
             <p className="font-medium text-lg pt-3 ">

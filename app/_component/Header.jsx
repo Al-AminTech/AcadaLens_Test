@@ -221,14 +221,14 @@ function Header() {
   return (
     <div>
       <div
-        className={`flex justify-between items-center bg-white shadow-md p-4 transition-all duration-300 ease-in-out ${
+        className={`flex justify-between items-center bg-white shadow-md p-4  transition-all duration-300 ease-in-out ${
           isFixed
             ? "fixed top-0 left-0 right-0 z-50 w-full"
-            : "rounded-md mx-0 md:mx-20 m-4"
+            : "rounded-none md:rounded-md mx-0 md:mx-20 m-0 md:m-4"
         }`}
       >
         <div>
-          <Image src={logo} className="w-[120.08px] h-[36px]" alt="Logo" />
+          <Image src={logo} className="w-28 h-20" alt="Logo" />
         </div>
         <div className="md:hidden">
           {menuOpen ? (
@@ -284,7 +284,7 @@ function Header() {
                     href={item.path}
                     className={`${
                       pathname === item.path ? "text-[#0090B2]" : "text-black"
-                    } hover:text-[#0091b2c3]`}
+                    } hover:text-[#0090B2]`}
                   >
                     {item.name}
                   </Link>
@@ -297,13 +297,13 @@ function Header() {
           <Link href={"/login"}>
             <Button
               variant="outline"
-              className="border w-28 border-[#0090B2] text-[#0090B2]"
+              className="border w-28 border-[#00A5CC] text-[#00A5CC]"
             >
               Login
             </Button>
           </Link>
           <Link href={"/signup"}>
-            <Button className="bg-[#0090B2] w-28 text-white">Sign Up</Button>
+            <Button className="bg-[#00A5CC] w-28 text-white">Sign Up</Button>
           </Link>
         </div>
       </div>
@@ -334,8 +334,8 @@ function Header() {
               <Link
                 href={item.path}
                 className={`block text-lg ${
-                  pathname === item.path ? "text-blue-500" : "text-black"
-                } hover:text-blue-500`}
+                  pathname === item.path ? "text-[#0090B2]" : "text-black"
+                } hover:text-[#0090B2]`}
               >
                 {item.name}
               </Link>
@@ -344,12 +344,12 @@ function Header() {
         </ul>
         <div className="p-4">
           <Link href={"/login"}>
-            <Button className="w-full border border-[#0090B2] text-[#0090B2]">
+            <Button className="w-full border bg-white border-[#00A5CC] text-[##00A5CC]">
               Login
             </Button>
           </Link>
           <Link href={"/signup"}>
-            <Button className="w-full bg-[#0090B2] mt-3 text-white">
+            <Button className="w-full bg-[#00A5CC] mt-3 text-white">
               Sign Up
             </Button>
           </Link>

@@ -9,7 +9,7 @@ import { TiSocialLinkedinCircular } from "react-icons/ti";
 function Team() {
   return (
     <div className="bg-[#d9f8ffc8]">
-      <div className="pt-5 flex flex-col md:flex-row justify-start md:justify-around">
+      <div className="pt-5 flex flex-col md:gap-0 gap-12 md:flex-row justify-start md:justify-around">
         <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <Link href={"/about/member"}>
@@ -24,7 +24,7 @@ function Team() {
             <TiSocialLinkedinCircular className="text-4xl hover:text-blue-300" />
           </div>
         </div>
-        <div className="  px-4 ">
+        <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl">Sanni Ahmed Agboola</h1>
@@ -37,8 +37,8 @@ function Team() {
           </div>
         </div>
       </div>
-      <div className="mt-20 pb-10 flex flex-col md:flex-row justify-start md:justify-around">
-        <div className="  px-4 ">
+      <div className="mt-12 pb-10 flex flex-col gap-12 md:gap-0 md:flex-row justify-start md:justify-around">
+        <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <div className="flex flex-col">
             <h1 className="font-bold text-2xl">Sanni Ahmed Agboola</h1>
