@@ -21,7 +21,7 @@
 // }
 
 // export default page;
-
+"use client"
 
 import React, { useState } from "react";
 import axios from "axios";

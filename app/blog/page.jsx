@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../_component/Header'
 import OurBlog from './_component/Ourblog'
-import ArticlesPage from './articles'
+import ArticlesPage from './Articles'
 import Learn from '../_component/Learn'
 import Footer from '../_component/Footer'
 
