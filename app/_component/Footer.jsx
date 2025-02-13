@@ -15,7 +15,7 @@ function Footer() {
   const MenuLists = [
     { name: "Contact", path: "/contact" },
     { name: "Faq", path: "/faq" },
-    { name: "Blog", path: "/upgrade" },
+    { name: "Blog", path: "/blog" },
     { name: "How it Works", path: "/how-it-works" },
   ];
 
@@ -33,7 +33,7 @@ function Footer() {
                 <li key={i}>
                   <Link
                     href={item.path}
-                    className={`text-white font-medium hover:text-blue-500`}
+                    className={`text-white font-medium hover:text-[#00A5CC]`}
                   >
                     {item.name}
                   </Link>
@@ -46,7 +46,7 @@ function Footer() {
                 <li key={i}>
                   <Link
                     href={item.path}
-                    className={`text-white font-medium hover:text-blue-500`}
+                    className={`text-white font-medium hover:text-[#00A5CC]`}
                   >
                     {item.name}
                   </Link>
@@ -59,7 +59,7 @@ function Footer() {
                 <li key={i}>
                   <Link
                     href={item.path}
-                    className={`text-white font-medium hover:text-blue-500`}
+                    className={`text-white font-medium hover:text-[#00A5CC]`}
                   >
                     {item.name}
                   </Link>
