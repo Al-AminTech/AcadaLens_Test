@@ -20,6 +20,8 @@ import Profile from "./Avatar.png"
 import UnilroinLogo from "./Unilorinlogo.png"
 import Community from "./community.png"
 import Social from "./Social.png"
+import Learners from "./Learns.png"
+import hamburger from "./Vector.png"
 export {
   logo,
   hero,
@@ -42,5 +44,7 @@ export {
   Profile,
   UnilroinLogo,
   Community,
-  Social
+  Social,
+  Learners,
+  hamburger
 };

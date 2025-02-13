@@ -9,7 +9,7 @@ function Values() {
       <div className="flex flex-col md:flex-row flex-wrap justify-start md:justify-center ">
         <div className="flex flex-col  bg-[#D9F8FF]  w-full md:w-[37rem] px-6 h-36 mt-12 rounded-lg items-center justify-center ">
           <h1 className="font-bold text-3xl text-black">Our Core Values</h1>
-          <p className="text ">
+          <p className="text-center pt-2 ">
             These are not just words but principles that guide us on how we
             interact with the world
           </p>

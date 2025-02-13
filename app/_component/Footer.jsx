@@ -7,7 +7,7 @@ import { MailIcon } from "lucide-react";
 
 function Footer() {
   const MenuList = [
-    { name: "Home", path: "/dashboard" },
+    { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Blog", path: "/blog" },
     { name: "How it Works", path: "/how-it-works" },

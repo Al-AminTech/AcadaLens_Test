@@ -94,6 +94,8 @@
 
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
+import Image from 'next/image'
+import { Learners } from '../img'
 
 const testimonials = [
   {
@@ -156,7 +158,7 @@ export default function TestimonialCarousel() {
                       <h3 className="text-base font-semibold">{testimonial.name}</h3>
                       <p className="text-xs text-gray-600">{testimonial.role}</p>
                     </div>
-                    <img src={testimonial.avatar} alt={testimonial.name} className="w-14 h-14 rounded-full" />
+                    <Image src={Learners} alt={testimonial.name} className="w-14 h-14 rounded-full" />
                   </div>
                 </div>
                 {index < testimonials.length - 1 && (

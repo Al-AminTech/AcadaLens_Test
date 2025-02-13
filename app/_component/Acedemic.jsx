@@ -7,7 +7,7 @@ function Acedemic() {
   return (
     <div className='hidden md:flex flex-col gap-3  items-center justify-center bg-[#F2FDFF] pt-10 '>
         <div>
-            <h1 className='font-extrabold text-xl '>Academic Excellence With AI Chatbot</h1>
+            <h1 className='font-extrabold text-2xl '>Academic Excellence With AI Chatbot</h1>
             <p className='text-center font-medium'>Helping you revise through AI Chatbot</p>
         </div>
         <div>

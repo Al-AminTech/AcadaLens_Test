@@ -16,8 +16,7 @@ function Teacher() {
           </div>
           <div className="pt-8 pl-2">
             <h3 className="font-bold text-xl w-full md:w-[576px] h-full md:h-[144px] md:text-3xl   text-[#000000]">
-              Custom Built With AI to Help Pre-College and College Students
-              Easily Manage Academic Excellence
+            Manage Your Place Of Residence To Your Taste With Ease For The Purpose of Academic Excellence
             </h3>
             <p className="pt-3 w-full md:w-[476px] text-[#303133]">
               Channeling AI to simplify academic preparation for pre-college and

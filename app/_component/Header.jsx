@@ -168,7 +168,7 @@
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React, { useState, useEffect } from "react";
-import { logo } from "../img";
+import { hamburger, logo } from "../img";
 import { Button } from "@/components/ui/button";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { FaChevronDown } from "react-icons/fa";
@@ -237,9 +237,10 @@ function Header() {
               className="cursor-pointer text-xl text-[#005C73]"
             />
           ) : (
-            <FaBars
+            <Image 
+              src={hamburger}
               onClick={toggleMenu}
-              className="cursor-pointer text-xl text-[#005C73]"
+              className="cursor-pointer w-10 h-10 text-[#005C73]"
             />
           )}
         </div>

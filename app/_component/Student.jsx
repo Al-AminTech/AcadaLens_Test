@@ -10,14 +10,13 @@ function Student() {
         <div>
           <div className="flex gap-3 items-center ml-3 pt-8">
             <Button className=" bg-[#005C73] h-10 w-48 text-white rounded-2xl">
-              What AcadaLens  offer
+              What AcadaLens  offers
             </Button>
             <Image src={star} className="w-8 h-8" />
           </div>
           <div className="pt-8 pl-2">
             <h3 className="font-bold text-xl w-full md:w-[576px] h-full md:h-[144px] md:text-3xl   text-[#000000]">
-              Custom Built With AI to Help Pre-College and College Students
-              Easily Manage Academic Excellence
+            Learn As A Team And Climb Up The Ladder Through Competition Among Different Teams 
             </h3>
             <p className="pt-3 w-full md:w-[476px] text-[#303133]">
               Channeling AI to simplify academic preparation for pre-college and
