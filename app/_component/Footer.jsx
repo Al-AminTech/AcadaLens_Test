@@ -22,7 +22,7 @@ function Footer() {
   return (
     <div className="bg-[#313131] pb-5  flex flex-col md:flex-row min-h-screen md:min-h-0  gap-0 md:gap-20 px-0 md:px-4">
       <div>
-        <Image src={footer} className="w-36 pt-10 ml-8 md:ml-0" />
+        <Image src={footer} className="w-36 pt-20 ml-8 md:ml-0" />
       </div>
       <div className="flex flex-col md:flex-row gap-0 md:gap-12  justify-around items-center">
         <div>

@@ -240,7 +240,7 @@ function Header() {
             <Image 
               src={hamburger}
               onClick={toggleMenu}
-              className="cursor-pointer w-10 h-10 text-[#005C73]"
+              className="cursor-pointer w-8 h-8 text-[#005C73]"
             />
           )}
         </div>
