@@ -53,7 +53,8 @@ export default function CreatePassword() {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto p-6">
+   <div className='loginbg'>
+     <div className="w-full max-w-md mx-auto p-6">
       <div className="space-y-2 mb-8">
         <h1 className="text-2xl font-semibold flex items-center gap-2">
           Create new password
@@ -112,5 +113,6 @@ export default function CreatePassword() {
         </Button>
       </form>
     </div>
+   </div>
   )
 }

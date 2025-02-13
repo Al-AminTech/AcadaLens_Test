@@ -165,7 +165,7 @@ import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useRouter } from "next/navigation";
 
-export default function Component() {
+export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
@@ -287,49 +287,51 @@ export default function Component() {
                 )}
               </Button>
 
-              <div className="relative my-4">
+              {/* <div className="relative my-4">
                 <div className="absolute inset-0 flex items-center">
                   <div className="w-full border-t border-gray-200" />
                 </div>
                 <div className="relative flex justify-center text-sm">
                   <span className="px-2 text-gray-500">or</span>
                 </div>
-              </div>
+              </div> */}
 
-              <div className="space-y-3">
-                <Link href={"/login/fblogin"}>
-                  <Button
-                    variant="outline"
-                    className="w-full flex gap-5 text-black"
-                    size="lg"
-                  >
-                    <p>
-                      <FaFacebook />
-                    </p>
-                    <p> Login with Facebook</p>
-                  </Button>
-                </Link>
-                <Button
-                  variant="outline"
-                  className="w-full flex gap-4 text-black"
-                  size="lg"
-                >
-                  <p>
-                    <FaGoogle />
-                  </p>
-                  <p> Login with Google</p>
-                </Button>
-                <Button
-                  variant="outline"
-                  className="w-full flex gap-4 text-black"
-                  size="lg"
-                >
-                  <p>
-                    <FaApple />
-                  </p>
-                  <p> Login with Apple</p>
-                </Button>
-              </div>
+              {/* <div className="space-y-4">
+  <Link href="/login/fblogin">
+    <Button
+      variant="outline"
+      className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+      size="lg"
+    >
+      <FaSquareFacebook className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+      <span className="text-center flex-grow text-lg font-medium">
+        Sign up with Facebook
+      </span>
+    </Button>
+  </Link>
+
+  <Button
+    variant="outline"
+    className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FcGoogle className="text-2xl mr-4 flex-shrink-0" />
+    <span className="text-center flex-grow text-lg font-medium">
+      Sign up with Google
+    </span>
+  </Button>
+
+  <Button
+    variant="outline"
+    className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FaApple className="text-black text-2xl mr-4 flex-shrink-0" />
+    <span className="text-center flex-grow text-lg font-medium">
+      Sign up with Apple
+    </span>
+  </Button>
+</div> */}
             </form>
           </div>
         </div>

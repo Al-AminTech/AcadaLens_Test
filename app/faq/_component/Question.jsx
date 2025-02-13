@@ -10,8 +10,8 @@ function Question() {
                 <Image src={faq}/>
             </div>
             <div className='pt-10'>
-                <h1 className='font-bold text-2xl text-start md:text-center'>We are here to answer all your questions</h1>
-                <p className='font-medium w-full md:w-[637px] text-center'>These are questions and answers to general popular questions from our users and enquirers</p>
+                <h1 className='font-bold text-2xl  text-center'>We are here to answer all your questions</h1>
+                <p className='font-medium w-full pt-3 md:w-[637px] text-center'>These are questions and answers to general popular questions from our users and enquirers</p>
             </div>
         </div>
     </div>

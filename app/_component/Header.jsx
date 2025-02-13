@@ -228,7 +228,7 @@ function Header() {
         }`}
       >
         <div>
-          <Image src={logo} className="w-28 h-20" alt="Logo" />
+          <Image src={logo} className="w-28 h-16" alt="Logo" />
         </div>
         <div className="md:hidden">
           {menuOpen ? (

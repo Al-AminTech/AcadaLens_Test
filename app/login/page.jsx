@@ -1,10 +1,10 @@
 import React from 'react'
-import CreatePassword from './_component/ResetPssword'
+import Login from './_component/Login'
 
 function page() {
   return (
     <div>
-      <CreatePassword/>
+        <Login/>
     </div>
   )
 }

@@ -932,12 +932,12 @@ export default function Component() {
                     Signing Up...
                   </div>
                 ) : (
-                  "Login"
+                  "Sign Up"
                 )}
               </Button>
             </form>
 
-            <div className="relative my-4">
+            {/* <div className="relative my-4">
               <div className="absolute inset-0 flex items-center">
                 <div className="w-full border-t border-black"></div>
               </div>
@@ -946,38 +946,44 @@ export default function Component() {
                   or
                 </span>
               </div>
-            </div>
+            </div> */}
 
-            <div className="space-y-4">
-              <Link href="/login/fblogin">
-                <Button
-                  variant="outline"
-                  className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
-                  size="lg"
-                >
-                  <FaSquareFacebook className="text-blue-500 text-2xl mr-4" />
-                  <span className="text-lg font-medium">
-                    Sign up with Facebook
-                  </span>
-                </Button>
-              </Link>
-              <Button
-                variant="outline"
-                className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
-                size="lg"
-              >
-                <FcGoogle className="text-2xl mr-4" />
-                <span className="text-lg font-medium">Sign up with Google</span>
-              </Button>
-              <Button
-                variant="outline"
-                className="w-full flex items-center justify-start text-black border border-teal-700 px-4 py-2 rounded-md"
-                size="lg"
-              >
-                <FaApple className="text-black text-2xl mr-4" />
-                <span className="text-lg font-medium">Sign up with Apple</span>
-              </Button>
-            </div>
+            {/* <div className="space-y-4">
+  <Link href="/login/fblogin">
+    <Button
+      variant="outline"
+      className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+      size="lg"
+    >
+      <FaSquareFacebook className="text-blue-500 text-2xl mr-4 flex-shrink-0" />
+      <span className="text-center flex-grow text-lg font-medium">
+        Sign up with Facebook
+      </span>
+    </Button>
+  </Link>
+
+  <Button
+    variant="outline"
+    className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FcGoogle className="text-2xl mr-4 flex-shrink-0" />
+    <span className="text-center flex-grow text-lg font-medium">
+      Sign up with Google
+    </span>
+  </Button>
+
+  <Button
+    variant="outline"
+    className="w-full flex items-center text-black border border-teal-700 px-4 py-2 rounded-md"
+    size="lg"
+  >
+    <FaApple className="text-black text-2xl mr-4 flex-shrink-0" />
+    <span className="text-center flex-grow text-lg font-medium">
+      Sign up with Apple
+    </span>
+  </Button>
+</div> */}
           </div>
         </div>
       </div>
