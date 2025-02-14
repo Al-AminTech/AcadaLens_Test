@@ -269,7 +269,7 @@ export default function PaymentForm() {
               <span className="text-gray-600">/Monthly</span>
             </div>
           </div>
-          <p className="text-gray-600 mb-6">Explore ScholaMetis for free</p>
+          <p className="text-gray-600 mb-6">Explore AcadaLens for free</p>
           
           <h4 className="text-xl mb-4">Features</h4>
           <ul className="space-y-3">

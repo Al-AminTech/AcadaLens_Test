@@ -6,7 +6,7 @@ import ContactForm from './_component/ContactInformation'
 
 function page() {
   return (
-    <div className='bg-white shadow-lg rounded-lg  m-2 w-[60rem] h-[40rem]'>
+    <div className='bg-white shadow-lg rounded-lg  m-2 w-full m:dw-[60rem] min-h-screen'>
        
       <ContactForm/>
     </div>

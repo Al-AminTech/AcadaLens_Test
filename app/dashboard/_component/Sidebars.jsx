@@ -666,7 +666,7 @@ const Sidebar = () => {
           {isCollapsed ? (
             <Image src={logo} className="w-8 h-8" alt="Logo" />
           ) : (
-            <Image src={logo} className="w-28 h-12" alt="Logo" />
+            <Image src={logo} className="w-28 h-16" alt="Logo" />
           )}
         </div>
 

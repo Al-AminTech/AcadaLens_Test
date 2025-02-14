@@ -10,7 +10,7 @@ function Bird() {
         </div>
         <div className='pt-20 pl-5 md:pl-0'>
             <h1 className='font-black text-2xl'>Contact Us</h1>
-            <p className='w-full md:w-[453px] text-[#000000]'>If you have any general question  for us at Scholametis chances are you could find answers to them on our FAQs page.</p>
+            <p className='w-full md:w-[453px] text-[#000000]'>If you have any general question  for us at AcadaLens chances are you could find answers to them on our FAQs page.</p>
         </div>
     </div>
   )

@@ -18,7 +18,7 @@ export default function Home() {
       <Student/>
       <Teacher/>
     <Academic/>
-    <TestimonialCarousel/>
+    <TestimonialCarousel/> 
     <Footer/>
     </div>
   );

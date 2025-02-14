@@ -16,36 +16,38 @@ function Contact() {
   return (
     <div className="bg-[#F2FDFF] ">
       <div>
-        <h1 className="font-bold text-3xl pl-5 pt-3 text-start md:text-center ">
+        <h1 className="font-bold text-3xl pl-5 pt-3 text-center md:text-center ">
           Contact us through any of the platforms
         </h1>
       </div>
-      <div className="flex flex-col md:flex-row items-center pt-10 justify-start md:justify-around ">
+      <div className="flex flex-col md:flex-row gap-12 md:gap-0 j items-center pt-10 justify-start md:justify-around ">
         <div className="pl-0 md:pl-5 pt-5 ">
           <form>
-            <h1 className="font-bold text-black text-3xl ">Submit a request</h1>
+          <div className="pl-4">
+          <h1 className="font-bold text-black text-3xl  ">Submit a request</h1>
             <p className="font-medium text-lg pt-3 ">
               Fill in Apropriate information and enquires
             </p>
-            <div className="flex flex-col">
+          </div>
+            <div className="flex flex-col w-full px-4">
               <div className="pt-8 flex flex-col">
-                <Label className="font-bold  flex  text-2xl " htmlFor="fname">
+                <Label className="font-bold flex text-2xl" htmlFor="fname">
                   Full name <sub className="pt-3 text-[#FE5621]">*</sub>
                 </Label>
                 <input
                   type="text"
                   placeholder="E.g Bilal Opeyemi"
-                  className=" mt-3 outline-none  border border-gray-200 h-16  w-96 rounded-xl pl-3"
+                  className="mt-3 outline-none border border-gray-200 h-16 w-full max-w-[384px] rounded-xl pl-3"
                 />
               </div>
               <div className="pt-8 flex flex-col">
-                <Label className="font-bold  flex text-2xl " htmlFor="fname">
+                <Label className="font-bold flex text-2xl" htmlFor="email">
                   Email address <sub className="pt-3 text-[#FE5621]">*</sub>
                 </Label>
                 <input
                   type="text"
                   placeholder="E.g bilalopeyemi@gmail.com"
-                  className=" mt-3 outline-none  border border-gray-200 h-16  w-96 rounded-xl pl-3"
+                  className="mt-3 outline-none border border-gray-200 h-16 w-full max-w-[384px] rounded-xl pl-3"
                 />
               </div>
               <div className="pt-8 pb-8 flex flex-col">
@@ -54,12 +56,13 @@ function Contact() {
                 </Label>
                 <Textarea
                   type="text"
-                  placeholder="E.g Enter Your Message "
-                  className=" mt-3 outline-none   border border-gray-200 h-36  bg-white w-96 rounded-xl pl-3"
+                  placeholder="E.g Enter Your Message"
+                  className="mt-3 outline-none border border-gray-200 h-36 bg-white w-full max-w-[384px] rounded-xl pl-3"
                 />
               </div>
             </div>
-            <Button className="bg-[#005C73] text-white  rounded-lg h-16 w-96 text-lg mb-4">
+
+            <Button className="bg-[#005C73] text-white  rounded-lg h-16 w-full max-w-[384px] text-lg mb-4">
               Send Request
             </Button>
           </form>
@@ -67,7 +70,7 @@ function Contact() {
         <div className="flex pl-8  flex-col">
           <div>
             <div>
-              <h1 className="font-bold text-xl">Social Media</h1>
+              <h1 className="font-bold text-2xl">Social Media</h1>
             </div>
             <div>
               <div className="pt-3">
@@ -77,7 +80,7 @@ function Contact() {
                 >
                   <FaTwitter className="" />
                   <p className="font-medium text-[#6D6D6D] hover:text-blue-400">
-                    twitter.com/scholametise
+                    twitter.com/acadalens
                   </p>
                 </Link>
               </div>
@@ -88,7 +91,7 @@ function Contact() {
                 >
                   <FaFacebook className="" />
                   <p className="font-medium text-[#6D6D6D] hover:text-blue-400">
-                    facebook/scholametise
+                    facebook/acadalens
                   </p>
                 </Link>
               </div>
@@ -99,25 +102,30 @@ function Contact() {
                 >
                   <FaInstagram className="" />
                   <p className="font-medium text-[#6D6D6D] hover:text-blue-400">
-                    instagram.com/scholametise
+                    instagram.com/acadalens
                   </p>
                 </Link>
               </div>
             </div>
           </div>
           <div className="pt-12">
-            <h1 className="font-bold  text-xl ">Email address</h1>
+            <h1 className="font-bold  text-2xl ">Email address</h1>
             <div>
-              <Link href={"/"} className="flex items-center gap-3 pt-4 hover:text-blue-400">
-              <IoMdMail className="" />
-                <p className="text-[#6D6D6D] hover:text-blue-400">support@scholametise.com.ng</p>
+              <Link
+                href={"/"}
+                className="flex items-center gap-3 pt-4 hover:text-blue-400"
+              >
+                <IoMdMail className="" />
+                <p className="text-[#6D6D6D] hover:text-blue-400">
+                  support@acadalens.com.ng
+                </p>
               </Link>
             </div>
           </div>
           <div className="pt-12 pb-5">
             <div className="flex gap-2 items-center">
-            < CiLocationOn className="text-xl font-bold"/>
-              <h1 className="font-bold  text-xl ">Location</h1>
+              <CiLocationOn className="text-xl font-bold" />
+              <h1 className="font-bold  text-2xl ">Location</h1>
             </div>
             <div>
               <p className="text-[#6D6D6D] w-full md:w-[307px]">

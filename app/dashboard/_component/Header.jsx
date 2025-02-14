@@ -4,7 +4,6 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { FaRegBell } from "react-icons/fa";
 import { Profile } from "@/app/img";
-
 export default function Header() {
   const pathname = usePathname();
 
@@ -47,7 +46,7 @@ export default function Header() {
   return (
     <div className="flex justify-between w-full bg-white shadow-sm border-b p-4 items-center">
       <div>
-        <h1 className="font-bold text-2xl sm:text-xl">{headerText}</h1>
+        <h1 className="font-bold text-lg pl-10 sm:pl-0 sm:text-xl">{headerText}</h1>
       </div>
       <div className="flex items-center gap-4">
         <Image src={Profile} className="w-10 h-10" alt="Profile" />
@@ -56,3 +55,4 @@ export default function Header() {
     </div>
   );
 }
+

@@ -22,6 +22,9 @@ export default function ExamOptions() {
     "Mathematics",
     "Physics",
     "Chemistry",
+    "Chemistry",
+    "Chemistry",
+    "Biology",
     "Biology",
   ];
 
@@ -54,7 +57,7 @@ export default function ExamOptions() {
           <h2 className="text-xl font-semibold text-primary mb-3">
             Select subjects
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-10">
             {subjects.map((subject) => (
               <label key={subject} className="flex items-center space-x-3">
                 <input
@@ -63,7 +66,7 @@ export default function ExamOptions() {
                   onChange={() => handleSubjectToggle(subject)}
                   className="form-checkbox h-5 w-5 text-primary"
                 />
-                <span className="text-gray-700">{subject}</span>
+                <span className="text-gray-700 w-full">{subject}</span>
               </label>
             ))}
           </div>
@@ -121,14 +124,14 @@ export default function ExamOptions() {
         </section>
       </div>
 
-      <div className="mt-10 flex justify-start space-x-4">
+      <div className="mt-10 flex md:flex-row flex-col  gap-3 md:gap-0 justify-center md:justify-start space-x-0 md:space-x-4">
         <Link href={"/dashboard/examination"}>
-          <Button className="px-6 py-2 w-44 bg-white border border-[#005C73] text-[#005C73] rounded-md hover:bg-primary/10">
+          <Button className="px-6 py-2 w-full md:w-44 bg-white border border-[#005C73] text-[#005C73] rounded-md hover:bg-primary/10">
             Cancel
           </Button>
         </Link>
         <Link href={"/dashboard/examination/examinstruct"}>
-          <Button className="px-6 w-44 py-2 bg-[#005C73] text-white rounded-md hover:bg-primary/90">
+          <Button className=" w-full md:w-44 py-2 bg-[#005C73] text-white rounded-md hover:bg-primary/90">
             Next
           </Button>
         </Link>
