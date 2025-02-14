@@ -15,7 +15,7 @@ function Values() {
           </p>
         </div>
         <div>
-          <div className="flex flex-col md:flex-row  justify-center gap-10 mt-0 md:mt-10">
+          <div className="flex flex-col md:flex-row  justify-center gap-10 mt-0 md:mt-6">
             <div className="bg-[#D9F8FF] h-full md:h-48 flex  gap-3 w-full md:w-full rounded-lg mt-3 px-4 py-4">
               <FaRegUser className="text-white bg-[#044251] rounded-full mt-3 w-24 h-10 p-2" />
               <div>
@@ -49,7 +49,7 @@ function Values() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row  justify-center gap-10 mb-10 mt-0 md:mt-10">
+          <div className="flex flex-col md:flex-row  justify-center gap-10 mb-10 mt-0 md:mt-6">
             <div className="bg-[#D9F8FF] h-full md:h-48 flex  gap-3 w-full md:w-[27rem] rounded-lg mt-3 px-4 py-4">
               <LuNewspaper className="text-white bg-[#044251] rounded-full mt-3 w-24 h-10 p-2" />
               <div>
