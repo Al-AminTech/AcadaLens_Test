@@ -264,7 +264,13 @@ function Header() {
                       />
                     </button>
                     {dropdownOpen && (
-                      <div className="absolute mt-2 bg-white shadow-lg rounded-md p-2 w-40 z-10">
+                      <div className="absolute mt-2 ml-3 pl-4 bg-white shadow-lg rounded-md p-2 w-40 z-10">
+                        <Link
+                          href="/academy"
+                          className="block text-black border-b pb-2 hover:text-[#0091b2c6] cursor-pointer"
+                        >
+                       Academy
+                        </Link>
                         <Link
                           href="/rent"
                           className="block text-black border-b pb-2 hover:text-[#0091b2c6] cursor-pointer"
@@ -273,7 +279,7 @@ function Header() {
                         </Link>
                         <Link
                           href="#"
-                          className="block text-black pt-3 hover:text-[#0091b2c6] cursor-pointer"
+                          className="block text-black  hover:text-[#0091b2c6] cursor-pointer"
                         >
                           Learning
                         </Link>
