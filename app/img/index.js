@@ -22,6 +22,7 @@ import Community from "./community.png"
 import Social from "./Social.png"
 import Learners from "./Learns.png"
 import hamburger from "./Vector.png"
+import LogoCollapse from "./logoscreen.png"
 export {
   logo,
   hero,
@@ -46,5 +47,6 @@ export {
   Community,
   Social,
   Learners,
-  hamburger
+  hamburger,
+  LogoCollapse
 };
