@@ -115,42 +115,44 @@ function Center() {
         {/* Exam Summary Section */}
         <div className="mt-4">
           <h1 className="font-bold pl-5 text-2xl sm:text-xl">Your Exam Summary</h1>
-          <div className="mt-10 justify-center flex flex-wrap gap-4 sm:gap-6">
-            <div>
-              <Exam
-                number={"35/100"}
-                name="Total exam done"
-                percent={"13"}
-                className="text-green-500"
-                icon={<BiUpArrowAlt />}
-              />
-            </div>
-            <div>
-              <Exam
-                number={"35/100"}
-                name="Total exam passed"
-                percent={"13"}
-                className="text-green-500"
-                icon={<BiUpArrowAlt />}
-              />
-            </div>
-            <div>
-              <Exam
-                number={"35/100"}
-                name="Total exam failed"
-                percent={"13"}
-                className="text-red-500"
-                icon={<BiDownArrowAlt />}
-              />
-            </div>
-            <div>
-              <Exam
-                number={"35/100"}
-                name="Total AI Correction"
-                percent={"13"}
-                className="text-green-500"
-                icon={<BiUpArrowAlt />}
-              />
+          <div className="mt-10 px-4 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div className="w-full">
+                <Exam
+                  number={"35/100"}
+                  name="Total exam done"
+                  percent={"13"}
+                  className="text-green-500"
+                  icon={<BiUpArrowAlt />}
+                />
+              </div>
+              <div className="w-full">
+                <Exam
+                  number={"35/100"}
+                  name="Total exam passed"
+                  percent={"13"}
+                  className="text-green-500"
+                  icon={<BiUpArrowAlt />}
+                />
+              </div>
+              <div className="w-full">
+                <Exam
+                  number={"35/100"}
+                  name="Total exam failed"
+                  percent={"13"}
+                  className="text-red-500"
+                  icon={<BiDownArrowAlt />}
+                />
+              </div>
+              <div className="w-full">
+                <Exam
+                  number={"35/100"}
+                  name="Total AI Correction"
+                  percent={"13"}
+                  className="text-green-500"
+                  icon={<BiUpArrowAlt />}
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -162,12 +164,21 @@ function Center() {
         {/* AI Class Summary Section */}
         <div className="mt-20">
           <h1 className="font-bold pl-4 text-2xl sm:text-xl">Your AI Class Summary</h1>
-          <div className="p-3">
-            <div className="flex flex-wrap gap-4 sm:gap-4">
-              <Summary name="UoE" subject="Use of English" topic="Oral Sound" />
+          <div className="mt-10 px-4 max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="w-full">
+            <Summary name="UoE" subject="Use of English" topic="Oral Sound" />
+            </div>
+             
+              <div className="w-full">
               <Summary name="UE" subject="Mathematics" topic="Accounting" />
+              </div>
+              <div className="w-full">
               <Summary name="UE" subject="Mathematics" topic="Accounting" />
+              </div>
+              <div className="w-full">
               <Summary name="UE" subject="Mathematics" topic="Accounting" />
+              </div>
             </div>
           </div>
         </div>
