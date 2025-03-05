@@ -5,7 +5,7 @@ import React from 'react'
 function Question() {
   return (
     <div className=' bg-[#f0f8f9]'>
-        <div className='flex flex-col md:flex-row justify-start md:justify-center gap-0 md:gap-5 '>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-0 md:gap-5 '>
             <div>
                 <Image src={faq}/>
             </div>

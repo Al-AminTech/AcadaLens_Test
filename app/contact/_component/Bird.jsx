@@ -4,8 +4,8 @@ import React from 'react'
 
 function Bird() {
   return (
-    <div className='flex flex-col-reverse bg-[#F2FDFF] md:flex-row justify-center gap-28'>
-        <div>
+    <div className='flex flex-col-reverse bg-[#F2FDFF] md:flex-row justify-center items-center gap-28'>
+        <div className='flex justify-center w-full md:w-auto'>
             <Image src={dog}/>
         </div>
         <div className='pt-20 pl-5 md:pl-0'>

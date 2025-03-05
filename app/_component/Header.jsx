@@ -351,7 +351,7 @@ function Header() {
         </ul>
         <div className="p-4">
           <Link href={"/login"}>
-            <Button className="w-full border bg-white border-[#00A5CC] text-[##00A5CC]">
+            <Button className="w-full border bg-white border-[#00A5CC] text-[#00A5CC]">
               Login
             </Button>
           </Link>

@@ -8,7 +8,7 @@ function AboutMem() {
       <div className="relative">
         <div className="aboutus">
           <div className="flex items-center justify-center flex-col h-screen">
-            <h1 className="text-6xl text-white font-bold">About Team member</h1>
+            <h1 className="text-6xl text-white font-bold">About-Team member</h1>
             <p className="pt-3">
               A web solution that cares for your all-round academic solution
               for Pre-college stage and college stage

@@ -10,13 +10,19 @@ function Footer() {
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Blog", path: "/blog" },
-    { name: "How it Works", path: "/how-it-works" },
+    { name: "Products", path: "/products" },
   ];
   const MenuLists = [
     { name: "Contact", path: "/contact" },
     { name: "Faq", path: "/faq" },
     { name: "Blog", path: "/blog" },
     { name: "How it Works", path: "/how-it-works" },
+  ];
+  const MenuListss = [
+    { name: "Privacy Policy", path: "/privacypolicies" },
+    { name: "Cookies", path: "/cookies" },
+    { name: "Terms & Condition", path: "/blog" },
+    { name: "Disclaimer", path: "/disclaimer" },
   ];
 
   return (
@@ -55,7 +61,7 @@ function Footer() {
             </ul>
             <ul className="flex gap-4 flex-col">
               <h1 className="font-bold text-2xl text-white">Policies</h1>
-              {MenuList.map((item, i) => (
+              {MenuListss.map((item, i) => (
                 <li key={i}>
                   <Link
                     href={item.path}
@@ -84,13 +90,13 @@ function Footer() {
               className="flex-grow px-4  outline-none h-14 py-2 rounded-l-md text-gray-900"
               required
             />
-            <Button
+            <button
               type="submit"
-              className="bg-[#005C73] flex  text-white h-14 px-6 py-2 rounded-r-md font-bold hover:bg-[#005C73] transition-colors"
+              className="bg-[#005C73] flex gap-2 items-center pt-4 text-white h-14 px-6 py-2 rounded-r-md font-bold hover:bg-[#005C73] transition-colors"
             >
               <MailIcon/>
               Subscribe
-            </Button>
+            </button>
           </form>
           <div className="border-b mt-12 md:border-none border-[#E9F0FB]"></div>
         </div>

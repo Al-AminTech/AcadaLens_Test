@@ -5,6 +5,10 @@ import React from "react";
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { MdFacebook } from "react-icons/md";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
+import { FaSquareTwitter } from "react-icons/fa6";
 
 function Team() {
   return (
@@ -19,9 +23,9 @@ function Team() {
             </div>
           </Link>
           <div className="flex gap-3">
-            <AiFillTwitterCircle className="text-4xl hover:text-blue-300" />
-            <MdFacebook className="text-4xl hover:text-blue-300" />
-            <TiSocialLinkedinCircular className="text-4xl hover:text-blue-300" />
+            <FaSquareTwitter className="text-4xl hover:text-blue-300" />
+            <FaFacebookSquare className="text-4xl hover:text-blue-300" />
+            <FaLinkedin className="text-4xl hover:text-blue-300" />
           </div>
         </div>
         <div className=" px-4 ">
@@ -31,9 +35,9 @@ function Team() {
             <p className="font-medium text-xl"> Product (UIUX) Designer</p>
           </div>
           <div className="flex gap-3">
-            <AiFillTwitterCircle className="text-4xl hover:text-blue-300" />
-            <MdFacebook className="text-4xl hover:text-blue-300" />
-            <TiSocialLinkedinCircular className="text-4xl hover:text-blue-300" />
+            <FaSquareTwitter className="text-4xl hover:text-blue-300" />
+            <FaFacebookSquare className="text-4xl hover:text-blue-300" />
+            <FaLinkedin className="text-4xl hover:text-blue-300" />
           </div>
         </div>
       </div>
@@ -45,9 +49,9 @@ function Team() {
             <p className="font-medium text-xl"> Product (UIUX) Designer</p>
           </div>
           <div className="flex gap-3">
-            <AiFillTwitterCircle className="text-4xl hover:text-blue-300" />
-            <MdFacebook className="text-4xl hover:text-blue-300" />
-            <TiSocialLinkedinCircular className="text-4xl hover:text-blue-300" />
+            <FaSquareTwitter className="text-4xl hover:text-blue-300" />
+            <FaFacebookSquare className="text-4xl hover:text-blue-300" />
+            <FaLinkedin className="text-4xl hover:text-blue-300" />
           </div>
         </div>
         <div className="  px-4 ">
@@ -57,9 +61,9 @@ function Team() {
             <p className="font-medium text-xl"> Product (UIUX) Designer</p>
           </div>
           <div className="flex gap-3">
-            <AiFillTwitterCircle className="text-4xl hover:text-blue-300" />
-            <MdFacebook className="text-4xl hover:text-blue-300" />
-            <TiSocialLinkedinCircular className="text-4xl hover:text-blue-300" />
+            <FaSquareTwitter className="text-4xl hover:text-blue-300" />
+            <FaFacebookSquare className="text-4xl hover:text-blue-300" />
+            <FaLinkedin className="text-4xl hover:text-blue-300" />
           </div>
         </div>
       </div>
