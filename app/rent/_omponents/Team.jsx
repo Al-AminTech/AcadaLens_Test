@@ -10,7 +10,7 @@ function Steam() {
         <div>
           <div className="flex gap-3 items-center ml-3 pt-8">
             <Button className=" bg-[#005C73] h-10 w-48 text-white rounded-2xl">
-              What ScholaMet is offer
+              What AcadaLens  Offers
             </Button>
             <Image src={star} className="w-8 h-8" />
           </div>

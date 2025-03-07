@@ -181,12 +181,11 @@ body {
 }
 @media (max-width: 768px) {
   .aboutus {
-    background-image: url(./img/smallbg.png);
+    background-image: url(./img/smallbg\ \(2\).png);
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     height: 40rem;
-    color: white;
   }
   .learn {
     background-image: url(./img/Learnsmall.png);

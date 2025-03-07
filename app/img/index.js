@@ -23,6 +23,8 @@ import Social from "./Social.png"
 import Learners from "./Learns.png"
 import hamburger from "./Vector.png"
 import LogoCollapse from "./logoscreen.png"
+import Question from "./Question.png"
+import line from "./line.png"
 export {
   logo,
   hero,
@@ -48,5 +50,7 @@ export {
   Social,
   Learners,
   hamburger,
-  LogoCollapse
+  LogoCollapse,
+  Question,
+  line
 };

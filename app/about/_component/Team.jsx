@@ -13,7 +13,7 @@ import { FaSquareTwitter } from "react-icons/fa6";
 function Team() {
   return (
     <div className="bg-[#d9f8ffc8]">
-      <div className="pt-5 flex flex-col md:gap-0 gap-12 md:flex-row justify-start md:justify-around">
+      <div className="pt-12 pb-10 flex flex-col gap-12 md:gap-14 md:flex-row justify-start md:justify-center">
         <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <Link href={"/about/member"}>
@@ -41,7 +41,7 @@ function Team() {
           </div>
         </div>
       </div>
-      <div className="mt-12 pb-10 flex flex-col gap-12 md:gap-0 md:flex-row justify-start md:justify-around">
+      <div className="mt-12 pb-10 flex flex-col gap-12 md:gap-14 md:flex-row justify-start md:justify-center">
         <div className=" px-4 ">
           <Image src={pic} className="w-full md:w-96" />
           <div className="flex flex-col">

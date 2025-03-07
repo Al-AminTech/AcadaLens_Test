@@ -1,4 +1,4 @@
-import { what } from "@/app/img";
+import { Question, what } from "@/app/img";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import React from "react";
@@ -8,11 +8,11 @@ function Started() {
     <div className=" bg-[#f0f8f9]">
         <div className="flex flex-col justify-center items-center pt-20">
       <div>
-        <Image src={what} className="w-20 h-20" />
+        <Image src={Question} className="w-[174px] h-[140px]" />
       </div>
-      <div className="flex flex-col gap-4 pb-5 justify-center items-center ">
+      <div className="flex flex-col gap-4 pb-5 justify-center text-[] items-center ">
         <div>
-          <h1 className="font-bold text-center  text-2xl ">
+          <h1 className="font-bold text-center  text-2xl text-[#313131]">
             Still have unanswered question?
           </h1>
           <p className="text-center font-normal text-md pt-3">
@@ -21,7 +21,7 @@ function Started() {
           </p>
         </div>
         <div>
-          <Button className="w-44 h-14">Get Started</Button>
+          <button className="w-44 h-14 bg-[#005C73] rounded-md text-white">Get Started</button>
         </div>
       </div>
     </div>

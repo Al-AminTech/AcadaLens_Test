@@ -1,4 +1,4 @@
-import { bulb, robot, vision } from "@/app/img";
+import { bulb,robot,  vision, line } from "@/app/img";
 import Image from "next/image";
 import React from "react";
 
@@ -6,10 +6,13 @@ function Hersecs() {
   return (
     <div className="bg-[#D9F8FF]">
       <div className="pt-20 px-3 ">
-        <div className="flex flex-col md:flex-row justify-normal md:justify-around">
+       {/* <div className="">
+      <Image src={line} className="w-full md:w-96" />
+       </div> */}
+       <div className="flex flex-col  md:flex-row justify-normal md:justify-around">
           <div className="flex flex-col gap-5 pt-10">
             <h1 className="font-black text-black text-4xl">Our Story</h1>
-            <p className="font-[400]  text-md w-full md:w-[499px] ">
+            <p className="font-[400]  text-md text-justify w-full md:w-[499px] ">
               {" "}
               The journey to Acada Lens began with a simple observation. In
               Nigeria, and across much of African countries, the educational
@@ -18,7 +21,7 @@ function Hersecs() {
               academic success.
             </p>
 
-            <p className="font-[400]  text-md  w-full md:w-[499px]">
+            <p className="font-[400]  text-md  text-justify w-full md:w-[499px]">
               Too often, students rely on outdated materials and limited
               instructional support, particularly in rural areas and underfunded
               schools. Sanni, having experienced these very challenges growing
@@ -26,14 +29,14 @@ function Hersecs() {
               artificial intelligence to fill some of these educational gaps.
             </p>
 
-            <p className="font-[400]  text-md  w-full md:w-[499px]">
+            <p className="font-[400]  text-md  text-justify w-full md:w-[499px]">
               Acada Lens is working to become a pioneering platform designed to
               leverage AI in exam preparation to project academic excellence. It
               provided an interactive, personalized experience that went beyond
               typical question banks.
             </p>
 
-            <p className="font-[400]  text-md  w-full md:w-[499px]">
+            <p className="font-[400]  text-md text-justify  w-full md:w-[499px]">
               Students could practice subjects, receive immediate feedback on
               incorrect answers, and access suggestions that helped them focus
               on improving their weak areas. It was a way to learn actively, to
@@ -55,7 +58,7 @@ function Hersecs() {
       </div>
       <div className="mt-8 px-5">
         <div className="flex flex-col gap-5 px-0 md:px-14 ">
-          <p className="font-[400] text-md ">
+          <p className="font-[400]  text-justify text-md ">
             But the innovative team is not stopping at exam preparation. They
             had another bold aspiration: to address Africa’s linguistic
             diversity through developing an African Indigenous Language Learning
@@ -68,15 +71,15 @@ function Hersecs() {
             identity, empowerment, and inclusivity.
           </p>
 
-          <p className="font-[400] text-md">
+          <p className="font-[400] text-justify text-md">
               To make Acada Lens accessible to every student, they structured
             their offerings with affordability in mind. A range of
             pocket-friendly subscription options, along with a flexible API and
             SDK licensing for other education businesses, aimed to bring this
-            resource to classrooms and homes across Africa
+            resource to classrooms and homes across Africa.
           </p>
 
-          <p className="font-[400] text-md">
+          <p className="font-[400]  text-justify text-md">
             Marketing strategies were crafted with equal thoughtfulness—free
             trial periods, referral programs, and school visits aimed to reach
             every student, especially those most underserved. This wasn’t just a
@@ -85,7 +88,7 @@ function Hersecs() {
             potential to transform the way Africa learned.
           </p>
 
-          <p className="font-[400] text-md">
+          <p className="font-[400] text-justify text-md">
             Today, Acada Lens is more than a company; it’s a bridge to a
             brighter future. It stands as a testament to what can happen when
             technology, empathy, and ambition converge. For team, every new
@@ -136,7 +139,7 @@ function Hersecs() {
               accessibility for students across the continent by providing
               access to individualized AI based academic support for Pre-College
               and College Students while also providing API and SDK  support to
-              Edutech businesses across the African continent and world at large
+              Edutech businesses across the African continent and world at large.
             </p>
           </div>
         </div>
